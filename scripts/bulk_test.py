@@ -82,7 +82,7 @@ def run_bulk_test(csv_path: Path, num_workers: int = MAX_WORKERS) -> None:
         []
     )  # Will store the results (id, query, response)
     with ThreadPoolExecutor(max_workers=num_workers) as executor:
-        # Map each scheduled future back to its originating CSV row.
+        # Map each scheduled future back to its originating CSV row. Executor.submit(func, arg1, arg2, ...) takes the callable first, then any positional (or keyword) arguments to pass when the worker executes it. Here, item["id"] and item["query"] come from the current CSV row (item), so each submitted task runs process_query_sync with that row’s id and query.
         future_to_data = {
             executor.submit(process_query_sync, item["id"], item["query"]): item
             for item in input_data
