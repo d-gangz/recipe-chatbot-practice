@@ -28,6 +28,7 @@ htmlcov/
 .mypy_cache/
 .ruff_cache/
 
+requirements.txt
 # Distribution
 dist/
 build/
