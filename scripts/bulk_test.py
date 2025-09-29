@@ -67,7 +67,7 @@ def run_bulk_test(csv_path: Path, num_workers: int = MAX_WORKERS) -> None:
     # Open the CSV file and read the data into a list of dictionaries. Only keep rows with 'id' and 'query' columns.
     with csv_path.open("r", newline="", encoding="utf-8") as csv_file:
         reader = csv.DictReader(csv_file)
-        # Expects columns 'id' and 'query'
+        # Expects columns 'id' and 'query' and only get data from those columns.
         input_data: List[Dict[str, str]] = [
             row for row in reader if row.get("id") and row.get("query")
         ]

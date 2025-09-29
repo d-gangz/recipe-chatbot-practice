@@ -37,6 +37,7 @@ class DimensionTuple(BaseModel):
     QueryStyleAndDetail: str
 
 
+# Has additional fields for the manual annotation of the queries later
 class QueryWithDimensions(BaseModel):
     id: str
     query: str
@@ -191,15 +192,21 @@ Generate {NUM_TUPLES_TO_GENERATE} unique dimension tuples following these patter
             # Each response is a DimensionTuplesList with a `.tuples` list of DimensionTuple models
             all_tuples.extend(response.tuples)
         unique_tuples = []
-        seen = set()  # Set gives fast membership checks; using a list would re-scan every stored tuple each time.
+        seen = (
+            set()
+        )  # Set gives fast membership checks; using a list would re-scan every stored tuple each time.
 
         for tup in all_tuples:
             # Turn the tuple into a JSON string. Strings are hashable, so we can drop them into `seen`
             # and quickly check “have we already kept this exact combination?”
             tuple_str = tup.model_dump_json()
             if tuple_str not in seen:
-                seen.add(tuple_str)  # Record the string so duplicates short-circuit on the next pass.
-                unique_tuples.append(tup)  # Keep the full DimensionTuple object (not the string) for the final result list.
+                seen.add(
+                    tuple_str
+                )  # Record the string so duplicates short-circuit on the next pass.
+                unique_tuples.append(
+                    tup
+                )  # Keep the full DimensionTuple object (not the string) for the final result list.
 
         print(f"Generated {len(all_tuples)} total tuples, {len(unique_tuples)} unique")
         return unique_tuples
@@ -288,16 +295,18 @@ def generate_queries_parallel(
         # Process completed generations as they finish
         with tqdm(total=len(dimension_tuples), desc="Generating Queries") as pbar:
             for future in as_completed(future_to_tuple):
-                tuple_idx = future_to_tuple[future]  # Look up the index we stored earlier to find the original DimensionTuple.
+                tuple_idx = future_to_tuple[
+                    future
+                ]  # Look up the index we stored earlier to find the original DimensionTuple.
                 try:
                     queries = future.result()
                     if queries:
                         for query in queries:
                             all_queries.append(
                                 QueryWithDimensions(
-                                    id=f"SYN{query_id:03d}",
+                                    id=f"SYN{query_id:03d}",  # Format like SYN001, SYN002 so IDs stay uniform and sortable.
                                     query=query,
-                                    dimension_tuple=dimension_tuples[tuple_idx],
+                                    dimension_tuple=dimension_tuples[tuple_idx],  # Reattach the DimensionTuple that produced this query.
                                 )
                             )
                             query_id += 1
