@@ -189,7 +189,7 @@ Generate {NUM_TUPLES_TO_GENERATE} unique dimension tuples following these patter
         # Combine tuples and remove duplicates
         all_tuples = []
         for response in responses:
-            # Each response is a DimensionTuplesList with a `.tuples` list of DimensionTuple models
+            # Each response is a DimensionTuplesList; extending here concatenates all generated batches into one list
             all_tuples.extend(response.tuples)
         unique_tuples = []
         seen = (
