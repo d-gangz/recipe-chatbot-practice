@@ -57,18 +57,26 @@ with ThreadPoolExecutor(max_workers=5) as executor:
 
 When the caller needs to know which input produced each result—or when you want to react as soon as each task finishes—create a dictionary that maps the future back to the original input.
 
+**Both Pattern 2 variants use the same ThreadPoolExecutor mechanics.** The only difference is **what value you store in the dictionary**: the input object itself vs. its index position.
+
+#### Pattern 2a: Store the Input Object Directly
+
+Store the actual input object in the dictionary. This gives you direct access to the input when a Future completes.
+
 ```python
 from concurrent.futures import as_completed
+
+urls = ["https://example.com", "https://httpbin.org/get", "https://github.com"]
 
 with ThreadPoolExecutor(max_workers=5) as executor:
     # Map each submitted Future back to the URL that produced it.
     future_to_url = {}
     for url in urls:
         future = executor.submit(fetch_page, url)
-        future_to_url[future] = url  # Remember which URL created this Future.
+        future_to_url[future] = url  # Store the URL string itself
 
     for future in as_completed(future_to_url):
-        url = future_to_url[future]  # Look up the original URL for this finished Future.
+        url = future_to_url[future]  # Get the URL string directly
         try:
             page = future.result()
             print(f"Fetched {url} ({len(page)} bytes)")
@@ -76,20 +84,145 @@ with ThreadPoolExecutor(max_workers=5) as executor:
             print(f"{url} failed: {exc}")
 ```
 
-`as_completed` yields futures in the order they finish, so you can stream progress updates, update a progress bar, or record per-input metadata immediately.
+**What's stored in the dictionary:**
+```python
+{
+    <Future_A>: "https://example.com",      # The actual URL string
+    <Future_B>: "https://httpbin.org/get",  # The actual URL string
+    <Future_C>: "https://github.com",       # The actual URL string
+}
+```
 
-In this pattern the dictionary stores the mapping explicitly: the loop submits each URL, captures the resulting `Future`, and saves the (future → url) pair. When a particular worker finishes, `future_to_url[future]` recovers the exact URL that spawned it. That lookup is the point where we translate "which Future just completed" back into "which input produced this result."
+`as_completed` yields futures in the order they finish, so you can stream progress updates, update a progress bar, or record per-input metadata immediately. The dictionary lookup `future_to_url[future]` translates "which Future just completed" back into "which input produced this result."
+
+**When to use Pattern 2a:**
+- You're building inputs dynamically (no pre-existing list)
+- The input objects are small and simple (strings, numbers)
+- You want direct, one-step access to the input
+- You prefer explicit, clear code over dict comprehensions
+
+#### Pattern 2b: Store the Index Position Instead
+
+Store the **index** (position number) instead of the input object itself. This requires an extra lookup step but is more memory-efficient and works well with dict comprehensions.
+
+```python
+# Your inputs are already in a list
+urls = ["https://example.com", "https://httpbin.org/get", "https://github.com"]
+
+with ThreadPoolExecutor(max_workers=5) as executor:
+    # Map each Future to its index in the original list
+    future_to_index = {
+        executor.submit(fetch_page, url): i  # Store index (0, 1, 2)
+        for i, url in enumerate(urls)
+    }
+
+    for future in as_completed(future_to_index):
+        index = future_to_index[future]  # Get the index number (0, 1, 2)
+        url = urls[index]  # Look up the URL using the index
+        try:
+            page = future.result()
+            print(f"Fetched {url} ({len(page)} bytes)")
+        except Exception as exc:
+            print(f"{url} failed: {exc}")
+```
+
+**What's stored in the dictionary:**
+```python
+{
+    <Future_A>: 0,  # Just a number pointing to position in the list
+    <Future_B>: 1,  # Just a number pointing to position in the list
+    <Future_C>: 2,  # Just a number pointing to position in the list
+}
+```
+
+**When to use Pattern 2b:**
+- You already have a list of inputs (no need to duplicate them)
+- The input objects are large or complex (more memory-efficient to store integers)
+- You need to access neighboring items in the list (`urls[index + 1]`)
+- You want to use dict comprehension for cleaner code
+
+#### Side-by-Side Comparison
+
+The **exact same task** implemented both ways:
+
+```python
+# Pattern 2a: Store the object directly
+future_to_url = {}
+for url in urls:
+    future = executor.submit(fetch_page, url)
+    future_to_url[future] = url  # Store "https://example.com"
+
+# Later...
+url = future_to_url[future]  # Get "https://example.com" directly
+```
+
+```python
+# Pattern 2b: Store the index
+future_to_index = {
+    executor.submit(fetch_page, url): i  # Store 0, 1, 2
+    for i, url in enumerate(urls)
+}
+
+# Later...
+index = future_to_index[future]  # Get 0, 1, or 2
+url = urls[index]  # Extra step: look up URL from list
+```
+
+**Key difference:** Pattern 2a retrieves the input in one step; Pattern 2b retrieves an index first, then uses it to get the input.
+
+**Performance:** For most use cases, the difference is negligible. Choose based on readability and whether you already have a list.
 
 ## Choosing Between the Patterns
 
-| Requirement                                               | Use a List | Use a Map + `as_completed` |
-| --------------------------------------------------------- | ---------- | -------------------------- |
-| Just gather results at the end                            | ✅         |                            |
-| Need to know which input produced each result             |            | ✅                         |
-| Want to react immediately as tasks finish                 |            | ✅                         |
-| Prefer submission order even if slower task finishes last | ✅         |                            |
+| Requirement                                               | Pattern 1 (List) | Pattern 2a (Map to Object) | Pattern 2b (Map to Index) |
+| --------------------------------------------------------- | ---------------- | -------------------------- | ------------------------- |
+| Just gather results at the end                            | ✅               |                            |                           |
+| Need to know which input produced each result             |                  | ✅                         | ✅                        |
+| Want to react immediately as tasks finish                 |                  | ✅                         | ✅                        |
+| Prefer submission order even if slower task finishes last | ✅               |                            |                           |
+| Building inputs dynamically (no pre-existing list)        |                  | ✅                         |                           |
+| Already have inputs in a list                             | ✅               |                            | ✅                        |
+| Input objects are large/complex                           |                  |                            | ✅                        |
+| Want dict comprehension syntax                            |                  |                            | ✅                        |
+| Need to access neighboring list items                     |                  |                            | ✅                        |
 
-In the HW2 scripts you saw both approaches: `generate_dimension_tuples` submits identical LLM calls and only needs the payloads, so it stores futures in a list and collects results afterwards. `generate_queries_parallel` must associate each result with its originating dimension tuple and update a progress bar as soon as work finishes, so it maps futures back to their tuple index and iterates with `as_completed`.
+### Examples from HW2 Scripts
+
+**`generate_dimension_tuples` uses Pattern 1:**
+- Submits 5 identical LLM calls
+- Only needs to collect the payloads
+- Order doesn't matter
+- Stores futures in a list and collects results afterwards
+
+```python
+futures = [executor.submit(call_llm, messages, DimensionTuplesList) for _ in range(5)]
+responses = [future.result() for future in futures]
+```
+
+**`generate_queries_parallel` uses Pattern 2b:**
+- Must associate each result with its originating dimension tuple
+- Updates a progress bar as soon as each task finishes
+- Maps futures back to their tuple index
+- Uses `as_completed` to process results immediately
+
+```python
+future_to_tuple = {
+    executor.submit(generate_queries_for_tuple, dim_tuple): i
+    for i, dim_tuple in enumerate(dimension_tuples)
+}
+
+for future in as_completed(future_to_tuple):
+    tuple_idx = future_to_tuple[future]  # Get index
+    dimension_tuple = dimension_tuples[tuple_idx]  # Use index to retrieve tuple
+    queries = future.result()
+    # Attach queries back to their source dimension_tuple
+```
+
+**Why Pattern 2b was chosen here:**
+1. ✅ `dimension_tuples` is already a list
+2. ✅ Each `DimensionTuple` is a Pydantic model with 6 fields (relatively large)
+3. ✅ Dict comprehension provides clean, compact syntax
+4. ✅ More memory-efficient to store integers than duplicate object references
 
 ## Additional Tips
 
