@@ -1,22 +1,12 @@
 [
   {
-    "trace_id": "5_12",
-    "query": "Vegetarian pizza but I don't like mushrooms or bell peppers",
-    "dietary_restriction": "vegetarian",
-    "response": "Let's make a delicious Margherita Vegetable Pizza, perfect for two people. This classic vegetarian pizza is flavorful without mushrooms or bell peppers, using fresh ingredients and a crispy crust.\n\n**...",
+    "trace_id": "1_37",
+    "query": "I'm vegan but I really want to make something with honey - is there a good substitute? i am craving a yogurt breakfast",
+    "dietary_restriction": "vegan",
+    "response": "Absolutely! Since you're vegan and craving a honey-sweetened yogurt breakfast, I recommend making a **Vegan Coconut & Maple Milk Parfait**. It\u2019s a creamy, sweet, and satisfying dish that mimics the de...",
     "true_label": "PASS",
     "predicted_label": "PASS",
-    "reasoning": "The recipe is a vegetarian pizza that explicitly avoids mushrooms and bell peppers, as specified by the user. It includes pizza dough, tomato sauce, mozzarella cheese, zucchini, red onion, and cherry tomatoes, all of which are vegetarian ingredients. The toppings are fresh, and no animal products (besides dairy cheese), meat, or fish are present. The preparation methods and ingredient choices align well with vegetarian dietary restrictions. Therefore, the recipe adheres to the vegetarian restriction and does not include any ingredients that violate it.",
-    "success": true
-  },
-  {
-    "trace_id": "55_32",
-    "query": "I'm pescatarian but shellfish makes me sick",
-    "dietary_restriction": "pescatarian",
-    "response": "Great! I recommend trying a delicious **Lemon Herb Baked Salmon**. It's healthy, easy to prepare, and perfect for two people.\n\n---\n\n### Lemon Herb Baked Salmon\n\n**Ingredients:**\n- 2 salmon fillets (ab...",
-    "true_label": "PASS",
-    "predicted_label": "PASS",
-    "reasoning": "The recipe features salmon as the primary ingredient, which aligns with a pescatarian diet that includes fish and seafood. Importantly, the recipe does not include shellfish or any shellfish products, which the user specifically reacts negatively to; thus, it adheres to the restriction of shellfish avoidance. The method and ingredients are free from shellfish and do not introduce any other non-pescatarian elements. The preparation of baked salmon with herbs and lemon is straightforward, healthy, and suitable for a pescatarian avoiding shellfish. Therefore, the recipe properly complies with the user's dietary restriction.",
+    "reasoning": "The recipe uses coconut milk, vegan yogurt, maple syrup, granola, berries, and nuts, all of which are plant-based ingredients suitable for a vegan diet. It explicitly replaces honey with maple syrup, aligning with vegan dietary restrictions. The preparation involves no animal products, and the method is straightforward, designed to mimic the creamy, sweet nature of a honey-sweetened yogurt breakfast. Since all ingredients and methods are compatible with veganism, the recipe adheres properly to the specified dietary restriction.",
     "success": true
   },
   {
@@ -26,287 +16,7 @@
     "response": "How about making a delicious Caprese Salad? It's a low-carb, no-cook dinner perfect for two people and is very easy to prepare.\n\n**Ingredients:**\n- 1 cup cherry tomatoes, halved\n- 1 cup fresh mozzarel...",
     "true_label": "PASS",
     "predicted_label": "PASS",
-    "reasoning": "The recipe is a classic Caprese Salad consisting of cherry tomatoes, fresh mozzarella, basil, olive oil, and optional balsamic vinegar. All ingredients are naturally low in carbohydrates and require no cooking skill\u2014only assembly. The method involves simply arranging and seasoning the ingredients, which aligns with the requirement for no-cook skills, and the ingredients are appropriate for a low-carb diet. There are no ingredients that violate the low-carb restriction, and the preparation does not involve heating or complex techniques. Therefore, the recipe fully adheres to the specified low-carb dietary restriction and is suitable as a simple, no-cook dinner option.",
-    "success": true
-  },
-  {
-    "trace_id": "24_36",
-    "query": "I want a cheeseburger but I'm dairy-free and vegetarian. I know this sounds impossible but I'm really craving the taste and texture of a classic American cheeseburger and I haven't had one in 3 years since I went vegetarian and developed lactose intolerance",
-    "dietary_restriction": "vegetarian",
-    "response": "Absolutely, you can enjoy a delicious dairy-free, vegetarian cheeseburger that captures the classic flavors and textures! Here's a recipe for a **Vegan Mushroom & Lentil Patty Cheeseburger** that serv...",
-    "true_label": "PASS",
-    "predicted_label": "PASS",
-    "reasoning": "The recipe provides a vegetarian, dairy-free cheeseburger made from lentil and mushroom patties, topped with dairy-free cheese, which aligns with the dietary restriction of vegetarian and dairy-free. The ingredients are all plant-based and do not include any animal products or dairy. The recipe explicitly includes dairy-free cheese and vegan mayonnaise, ensuring lactose intolerance is addressed. The cooking methods and ingredients do not introduce any animal-derived or dairy items, satisfying the dietary constraints. Therefore, the recipe adheres properly to the vegetarian restriction with dairy-free considerations, capturing the flavor and texture of a cheeseburger as requested.",
-    "success": true
-  },
-  {
-    "trace_id": "57_24",
-    "query": "Vegetarian protein that isn't beans - I hate beans",
-    "dietary_restriction": "vegetarian",
-    "response": "Certainly! How about trying a **Sweet Potato & Quinoa Stuffed Bell Peppers**? It's a hearty vegetarian dish packed with protein, flavorful, and bean-free.\n\n### Ingredients (serves 2):\n- 2 large bell p...",
-    "true_label": "PASS",
-    "predicted_label": "PASS",
-    "reasoning": "The recipe is for Sweet Potato & Quinoa Stuffed Bell Peppers, which is vegetarian and explicitly designed to be bean-free. Quinoa is a complete plant-based protein and serves as the primary protein source in this dish. The inclusion of feta cheese is optional and generally regarded as vegetarian-friendly, not animal-derived meat or gelatin. The ingredients are all plant-based or vegetarian-friendly, and the cooking methods are appropriate. Since the dish avoids beans and includes a substantial vegetarian protein (quinoa), it adheres to the user's restriction of wanting a vegetarian protein source without beans. Therefore, the recipe aligns with the dietary restrictions and preferences specified.",
-    "success": true
-  },
-  {
-    "trace_id": "24_32",
-    "query": "I want a cheeseburger but I'm dairy-free and vegetarian. I know this sounds impossible but I'm really craving the taste and texture of a classic American cheeseburger and I haven't had one in 3 years since I went vegetarian and developed lactose intolerance",
-    "dietary_restriction": "vegetarian",
-    "response": "Absolutely! You can enjoy a delicious, dairy-free vegetarian cheeseburger that captures the classic taste and texture you're craving. Here's a recipe for a **Vegan Lentil Veggie Burger with Dairy-Free...",
-    "true_label": "PASS",
-    "predicted_label": "PASS",
-    "reasoning": "The recipe provided is for a vegetarian lentil veggie burger with dairy-free cheese, which adheres to the vegetarian restriction by including no meat or fish. The cheese is plant-based and free from dairy, satisfying the dairy-free requirement. The ingredients such as lentils, vegetables, and oats are all plant-based, and the use of vegan cheese and gluten-free or whole wheat buns aligns with standard vegetarian and dairy-free practices. The cooking methods involve grilling or pan-frying the patties and assembling the burger with vegetables and dairy-free cheese, which is appropriate and does not violate any dietary restrictions. Overall, the recipe successfully captures the taste and texture of a cheeseburger while respecting the specified dietary constraints.",
-    "success": true
-  },
-  {
-    "trace_id": "43_14",
-    "query": "Comfort food that won't make me feel guilty",
-    "dietary_restriction": "vegetarian",
-    "response": "Certainly! I recommend preparing a **Grilled Chicken and Vegetable Quinoa Bowl**, a nutritious and comforting dish that's light yet satisfying. It\u2019s perfect for two servings and packed with lean prote...",
-    "true_label": "FAIL",
-    "predicted_label": "FAIL",
-    "reasoning": "The recipe is titled as a 'comfort food' dish suitable for someone seeking guilt-free eating, and it features a quinoa bowl topped with grilled chicken and vegetables. The key issue is that the dietary restriction specified is vegetarian; however, this recipe explicitly includes chicken breasts, which are animal protein. Since vegetarians abstain from all meat and poultry, the inclusion of chicken directly violates the vegetarian restriction. The rest of the ingredients\u2014quinoa, vegetables, olive oil, lemon, herbs\u2014are vegetarian-friendly, but the presence of chicken is incompatible with a vegetarian diet. Therefore, despite the appealing preparation methods and ingredients, the recipe fails the vegetarian dietary restriction because it contains animal meat.",
-    "success": true
-  },
-  {
-    "trace_id": "26_29",
-    "query": "I'm on a sugar-free diet but I want to make candy",
-    "dietary_restriction": "sugar-free",
-    "response": "Absolutely! Here's a delightful sugar-free recipe for **Chocolate Coconut Bites**\u2014a delicious, guilt-free candy perfect for satisfying your sweet tooth.\n\n### Ingredients:\n- 1 cup unsweetened shredded ...",
-    "true_label": "PASS",
-    "predicted_label": "PASS",
-    "reasoning": "The recipe uses unsweetened shredded coconut, coconut oil, a sugar-free sweetener (erythritol or monk fruit), vanilla extract, salt, and unsweetened cocoa powder. All these ingredients are free of added sugars, aligning with a sugar-free diet. The instructions involve combining these ingredients and forming bites, then refrigerating until set, with no added sugars or sugar-containing ingredients used. Since the recipe explicitly utilizes sugar substitutes approved for sugar-free diets and contains no high-sugar or added sugar ingredients, it adheres well to the dietary restriction. The preparation methods also do not introduce any non-compliant ingredients. Therefore, the recipe is suitable for someone following a sugar-free diet.",
-    "success": true
-  },
-  {
-    "trace_id": "20_11",
-    "query": "Low-carb pizza recipe - I miss pizza so much",
-    "dietary_restriction": "low-carb",
-    "response": "Certainly! Here's a delicious low-carb cauliflower crust pizza recipe, perfect for 2 people. It's crispy, flavorful, and satisfies that pizza craving without the carbs.\n\n**Cauliflower Crust Pizza (Ser...",
-    "true_label": "PASS",
-    "predicted_label": "PASS",
-    "reasoning": "The recipe features a cauliflower crust, which is a common and accepted low-carb alternative to traditional wheat-based pizza crusts. The ingredients for the crust include grated cauliflower, egg, and cheeses, all aligning with low-carb dietary restrictions. The preparation methods\u2014squeezing out moisture and baking until crispy\u2014properly address the goal of a low-carb, satisfying pizza alternative. The toppings are flexible and include vegetables and meats like pepperoni, which are compatible with low-carb diets. The recipe avoids high-carbohydrate ingredients such as wheat flour, bread, or sugar-laden sauces. Additionally, it specifies a sugar-free tomato sauce, further reducing carbs. Overall, the response adheres to the low-carb restriction, providing an appropriate, detailed, and practical recipe that satisfies the craving without violating the dietary restriction.",
-    "success": true
-  },
-  {
-    "trace_id": "26_30",
-    "query": "I'm on a sugar-free diet but I want to make candy",
-    "dietary_restriction": "sugar-free",
-    "response": "Certainly! How about trying a simple and delicious Sugar-Free Coconut Lemon Chews? They're naturally sweetened with a touch of honey or your preferred natural sweetener, and they have a refreshing cit...",
-    "true_label": "FAIL",
-    "predicted_label": "FAIL",
-    "reasoning": "The recipe claims to be sugar-free but includes honey or maple syrup as optional sweeteners. Honey and maple syrup are natural sugars and, therefore, not compatible with a strictly sugar-free diet. Since the dietary restriction specifies 'sugar-free', the presence of these ingredients violates the restriction unless the user has a specific exception or is using a different ultra-low sugar substitute. Additionally, the instruction indicates that the sweetener is optional; however, even if omitted, the recipe contains honey or syrup by default, which contradicts the 'sugar-free' requirement. The rest of the ingredients\u2014coconut, lemon juice, lemon zest, coconut oil, salt\u2014are naturally sugar-free, and the method does not introduce other sugars. Therefore, the recipe does not fully adhere to a strict sugar-free diet due to the inclusion of honey or syrup, making it a FAIL.",
-    "success": true
-  },
-  {
-    "trace_id": "46_17",
-    "query": "I avoid processed foods but I'm lazy",
-    "dietary_restriction": "paleo",
-    "response": "Great! Here's a simple yet delicious recipe for **Garlic Lemon Pasta** \u2014 a quick, minimal-ingredient dish that feels indulgent but is entirely fresh and wholesome. Perfect for a lazy day!\n\n### **Garli...",
-    "true_label": "FAIL",
-    "predicted_label": "UNKNOWN",
-    "reasoning": "The recipe is for a Garlic Lemon Pasta that uses spaghetti or similar pasta, which is made from wheat. Wheat pasta contains gluten and is a processed food, contrary to the paleo diet restriction which excludes grains and processed foods. The ingredients like pasta, even if combined with fresh garlic, lemon, olive oil, and herbs, do not adhere to paleo principles due to the presence of wheat-based pasta. Additionally, traditional pasta is refined and processed, further violating the paleo restriction. Since the query specifies a paleo diet, the recipe should avoid grains altogether and preferably use compliant alternatives such as zucchini noodles, spaghetti squash, or kelp noodles. The current recipe does not meet the paleo dietary restriction due to the inclusion of processed wheat pasta, despite the use of fresh ingredients and simple preparation. Therefore, this recipe fails to align with the paleo restriction.",
-    "success": true
-  },
-  {
-    "trace_id": "51_23",
-    "query": "I eat pretty clean most of the time",
-    "dietary_restriction": "whole30",
-    "response": "Great! I recommend trying a **Lemon Herb Grilled Chicken Salad**\u2014a light, refreshing, and healthy dish perfect for a clean eating plan. It\u2019s packed with lean protein and fresh greens, and the lemon he...",
-    "true_label": "FAIL",
-    "predicted_label": "PASS",
-    "reasoning": "The recipe is for Lemon Herb Grilled Chicken Salad, which includes ingredients such as chicken breasts, mixed greens, vegetables, and a lemon herb dressing. All listed ingredients\u2014chicken, greens, cucumber, tomatoes, onion, avocado, olive oil, lemon juice, honey or maple syrup, Dijon mustard, garlic, and herbs\u2014are compliant with the Whole30 program, which excludes added sugars (honey and maple syrup are optional and can be omitted or replaced with compliant alternatives), grains, dairy, legumes, and processed additives. The cooking methods involve grilling and assembling fresh ingredients without any non-compliant items. Although honey or maple syrup is optional, recommending to omit or substitute it aligns with Whole30 rules. Overall, the recipe adheres to Whole30 restrictions as written, emphasizing whole, unprocessed, and compliant ingredients and methods. Therefore, this recipe properly adheres to the Whole30 dietary restriction.",
-    "success": true
-  },
-  {
-    "trace_id": "31_31",
-    "query": "I need a vegan recipe for Thanksgiving dinner that will satisfy my very traditional meat-and-potatoes family who think vegetables are what food eats. They're coming to my house this year and I can't serve turkey but I also can't have them leaving hungry and complaining about rabbit food",
-    "dietary_restriction": "vegan",
-    "response": "Absolutely! I recommend preparing a hearty Vegan Mushroom Wellington. It\u2019s a show-stopping centerpiece packed with rich flavors that even the most skeptical meat-eaters will appreciate. The flaky puff...",
-    "true_label": "PASS",
-    "predicted_label": "PASS",
-    "reasoning": "The recipe is a vegan Mushroom Wellington, which uses puff pastry, mushrooms, spinach, onion, garlic, and flavorings. All ingredients are plant-based, satisfying the vegan restriction. The preparation includes a savory mushroom filling wrapped in pastry, offering a hearty meatless centerpiece suitable for a traditional family craving substantial food. Since the entire dish contains no animal products and focuses on a rich, traditional presentation comparable to a meat pie, it aligns well with satisfying a meat-and-potatoes family within a vegan dietary framework. There are no animal-derived ingredients or methods that violate the vegan restriction, and the dish provides substantial, flavorful comfort food appropriate for Thanksgiving. Therefore, it properly adheres to the vegan dietary restriction.",
-    "success": true
-  },
-  {
-    "trace_id": "29_24",
-    "query": "I'm vegan and gluten-free and also hate vegetables. What can I eat?",
-    "dietary_restriction": "vegan",
-    "response": "Given your preferences for a vegan and gluten-free meal, and your dislike of vegetables, I recommend trying a **Vegan Chickpea & Sweet Potato Patties**. They're hearty, flavorful, and easy to make wit...",
-    "true_label": "PASS",
-    "predicted_label": "PASS",
-    "reasoning": "The recipe is for vegan chickpea and sweet potato patties made with canned chickpeas, sweet potato, gluten-free flour, and spices, with cooking methods that do not involve vegetables directly. It explicitly states it is vegetable-free, adhering to the dislike of vegetables, and the ingredients are all plant-based and gluten-free. The preparation and cooking steps avoid adding vegetables beyond the optional side dish suggestions, and no animal products or gluten-containing ingredients are included. Although the ingredients include sweet potato and chickpeas, which are technically vegetables and legumes respectively, the context indicates the recipe is designed to be vegetable-free and suitable for someone who dislikes vegetables, meaning they are not emphasizing their inclusion as the main ingredients. Since the user specifies dislike of vegetables and the recipe avoids adding vegetables, and all ingredients adhere to vegan and gluten-free restrictions, the recipe conforms to the dietary restrictions. Therefore, I consider this recipe to be appropriate and adherent to the specified dietary restrictions.",
-    "success": true
-  },
-  {
-    "trace_id": "46_19",
-    "query": "I avoid processed foods but I'm lazy",
-    "dietary_restriction": "paleo",
-    "response": "Let's go for a quick and nutritious Meal: **Garlic Lemon Chickpea Salad**. It\u2019s super simple, packed with protein, and requires minimal prep, suitable for a lazy day with basic ingredients. Serves 2.\n...",
-    "true_label": "FAIL",
-    "predicted_label": "FAIL",
-    "reasoning": "The recipe is for a Chickpea Salad with lemon, garlic, and olive oil, which is a plant-based, processed-food-minimized dish. However, chickpeas are a legume and generally considered well-processed (canned chickpeas are cooked, drained, and often contain added preservatives or salt). For a strict paleo diet, legumes\u2014including chickpeas\u2014are avoided due to their lectin and phytate content, which some paleo guidelines restrict. The recipe also includes optional herbs and lemon, which are paleo-friendly, but the core ingredient (canned chickpeas) violates the paleo restriction. Furthermore, the recipe does not include any processed ingredients or additives, aligning with the 'avoid processed foods' aspect, but it fundamentally fails the paleo restriction due to the chickpeas. Therefore, despite the simplicity and minimal processing, it does not adhere to paleo guidelines because of the chickpeas.",
-    "success": true
-  },
-  {
-    "trace_id": "47_30",
-    "query": "Dairy-free but cheese is okay sometimes",
-    "dietary_restriction": "dairy-free",
-    "response": "Great! Here's a delicious dairy-free Chickpea Salad Sandwich \u2014 perfect for a quick lunch or light dinner, serving 2 people.\n\n### Dairy-Free Chickpea Salad Sandwich\n\n**Ingredients:**\n- 1 can (15 oz) ch...",
-    "true_label": "PASS",
-    "predicted_label": "PASS",
-    "reasoning": "The recipe response is for a Chickpea Salad Sandwich that explicitly uses vegan mayonnaise as a dairy-free alternative, with optional ingredients like lettuce, pickles, or tomato that are also dairy-free. The main ingredients\u2014chickpeas, vegetables, condiments (mustard, lemon juice, smoked paprika)\u2014are all dairy-free. The bread used is specified as whole-grain or preferred bread; most breads are typically dairy-free, although some may contain dairy ingredients, but this is not specified as an issue here. The recipe acknowledges that cheese is okay sometimes, but since no cheese or dairy-based sauces are included or required, the dish remains dairy-free. It makes clear use of plant-based substitutes where necessary, ensuring adherence to a dairy-free diet. Therefore, the recipe properly adheres to the dietary restriction of being dairy-free. \n\nNote: The mention of 'cheese is okay sometimes' is acknowledged but does not impact the dairy-free requirement, as no cheese or dairy ingredients are included in the recipe. Overall, all ingredients meet the dairy-free restriction without violating the dietary parameters.",
-    "success": true
-  },
-  {
-    "trace_id": "1_35",
-    "query": "I'm vegan but I really want to make something with honey - is there a good substitute? i am craving a yogurt breakfast",
-    "dietary_restriction": "vegan",
-    "response": "Absolutely! For a vegan breakfast yogurt that uses honey, you can substitute honey with maple syrup or agave nectar for sweetness. To keep it creamy and satisfying, I recommend making a vegan coconut ...",
-    "true_label": "PASS",
-    "predicted_label": "PASS",
-    "reasoning": "The recipe is labeled as vegan and explicitly states the use of vegan coconut yogurt and vegan granola, indicating all ingredients are plant-based. It correctly replaces honey with maple syrup or agave nectar, which are appropriate vegan substitutes, satisfying the user's requirement for a honey substitute in a vegan context. The preparation method involves combining coconut yogurt with the sweetener and vanilla to mimic the sweetness and creaminess associated with yogurt-based breakfasts, and layering with fruits and nuts is typical for a parfait. There are no animal-derived ingredients or methods that violate vegan restrictions. Therefore, the recipe adheres properly to the vegan dietary restriction and appropriately addresses the user's craving for a yogurt breakfast with a honey substitute.",
-    "success": true
-  },
-  {
-    "trace_id": "1_37",
-    "query": "I'm vegan but I really want to make something with honey - is there a good substitute? i am craving a yogurt breakfast",
-    "dietary_restriction": "vegan",
-    "response": "Absolutely! Since you're vegan and craving a honey-sweetened yogurt breakfast, I recommend making a **Vegan Coconut & Maple Milk Parfait**. It\u2019s a creamy, sweet, and satisfying dish that mimics the de...",
-    "true_label": "PASS",
-    "predicted_label": "UNKNOWN",
-    "reasoning": "The recipe is explicitly labeled as VEGAN and uses plant-based ingredients: canned coconut milk, maple syrup as a honey substitute, vegan yogurt, granola, and nuts. All ingredients are vegan-friendly and do not contain animal products or honey, aligning with the dietary restriction. The preparation method involves simple layering without any animal-derived ingredients. While the user is craving a 'yogurt breakfast' with honey, the recipe appropriately substitutes honey with maple syrup, which is vegan and suitable. The use of plant-based yogurt instead of dairy-based yogurt ensures adherence to vegan standards. Therefore, the recipe fulfills the vegan dietary restriction while also addressing the user's craving with an appropriate honey substitute.\n\nLabel: PASS",
-    "success": true
-  },
-  {
-    "trace_id": "12_13",
-    "query": "Diabetic-friendly dessert that doesn't use artificial sweeteners",
-    "dietary_restriction": "diabetic-friendly",
-    "response": "Certainly! Here's a delightful diabetic-friendly dessert that uses natural sweetness: **Baked Cinnamon Apples**. It's simple, wholesome, and naturally sweetened with the fruit's own sugars.\n\n### Baked...",
-    "true_label": "PASS",
-    "predicted_label": "PASS",
-    "reasoning": "The recipe for Baked Cinnamon Apples relies solely on apples, cinnamon, nutmeg, vanilla, lemon juice, and optional nuts and yogurt. The apples' natural sugars provide sweetness without added refined sugars or artificial sweeteners. The optional honey or maple syrup, if used, introduces natural sweeteners but can be omitted to keep the dessert free of added sugars, aligning with the 'no artificial sweeteners' restriction for a diabetic-friendly recipe. The preparation method does not include any ingredients or techniques that would violate diabetic dietary guidelines. Since the focus is on natural sweetness, and no artificial or processed sugars are used, this recipe adheres to a diabetic-friendly restriction that emphasizes controlling blood sugar levels through natural ingredients. Therefore, this recipe conforms to the dietary restriction.",
-    "success": true
-  },
-  {
-    "trace_id": "42_29",
-    "query": "I want something light but filling",
-    "dietary_restriction": "low-carb",
-    "response": "Let's go with a **Lentil and Vegetable Soup** \u2014 a hearty yet light dish that's perfect for filling and nutritious. This recipe makes about 2 servings.\n\n### Ingredients:\n- 1/2 cup dried lentils (rinsed...",
-    "true_label": "FAIL",
-    "predicted_label": "FAIL",
-    "reasoning": "The recipe provided is for a lentil and vegetable soup, which uses dried lentils as the primary ingredient. Lentils are legumes that contain a significant amount of carbohydrates, including starches and sugars, making them relatively high in carbs compared to other protein sources. Since the dietary restriction is low-carb, this dish is likely too carbohydrate-dense to be considered compliant, as lentils typically contain approximately 20-25g of net carbs per half-cup cooked serving. Additionally, the recipe includes vegetables like carrots and possibly certain broths that may contain added sugars or carbs, further increasing the carbohydrate content. While the preparation method is healthy and fresh, the presence of lentils directly conflicts with the low-carb restriction. Therefore, despite being nourishing and filling, this recipe does not adhere to a low-carb dietary restriction.",
-    "success": true
-  },
-  {
-    "trace_id": "29_7",
-    "query": "I'm vegan and gluten-free and also hate vegetables. What can I eat?",
-    "dietary_restriction": "vegan",
-    "response": "Certainly! I recommend trying my **Creamy Coconut Lentil Risotto**. It\u2019s hearty, flavorful, vegan, gluten-free, and doesn't rely heavily on vegetables, making it perfect for your preferences. Here's h...",
-    "true_label": "PASS",
-    "predicted_label": "UNKNOWN",
-    "reasoning": "The recipe features red lentils cooked with coconut milk and vegetable broth, along with aromatics like onion and garlic, and spices. While the main ingredients\u2014red lentils, coconut milk, vegetable broth, spices, and oils\u2014are all plant-based and gluten-free, the recipe explicitly includes onion and garlic, which are vegetables. The user specified they 'hate vegetables,' so this recipe does not align with the user's preferences. Additionally, the recipe uses onion and garlic as foundational ingredients, which are vegetables, thus contradicting the user's dislike. Therefore, despite adherence to vegan and gluten-free restrictions, the recipe fails to meet the requirement of avoiding vegetables, making it a failed adherence to the user's unique preferences.",
-    "success": true
-  },
-  {
-    "trace_id": "30_34",
-    "query": "Keto meal that doesn't make me feel gross",
-    "dietary_restriction": "keto",
-    "response": "Absolutely! I recommend trying a **Garlic Butter Shrimp with Spinach**. It's flavorful, satisfying, and keto-friendly, with a lovely balance of richness and freshness\u2014perfect to avoid that \"gross\" fee...",
-    "true_label": "PASS",
-    "predicted_label": "PASS",
-    "reasoning": "The recipe features shrimp, butter, olive oil, garlic, spinach, and optional spices and lemon, all of which are compatible with a keto diet. The ingredients are low in carbohydrates and high in fats and protein, aligning with keto principles. The cooking methods involve saut\u00e9ing and combining these ingredients without adding high-carb or non-keto ingredients such as sugars, grains, or processed foods. The recipe avoids any ingredients that would violate the keto restriction, and the overall composition promotes satiety and richness, consistent with keto preferences. Therefore, the recipe appropriately adheres to the keto dietary restriction.",
-    "success": true
-  },
-  {
-    "trace_id": "20_26",
-    "query": "Low-carb pizza recipe - I miss pizza so much",
-    "dietary_restriction": "low-carb",
-    "response": "Let's make a delicious low-carb cauliflower crust pizza! This recipe is perfect for satisfying your pizza craving without the carbs. It serves 2 people.\n\n### Ingredients:\n- 1 medium cauliflower head (...",
-    "true_label": "PASS",
-    "predicted_label": "PASS",
-    "reasoning": "The recipe uses cauliflower as the main crust ingredient, combined with egg and cheese, which is a common and accepted method for creating a low-carb pizza crust. Cauliflower is naturally low in carbs and gluten-free, aligning with low-carb dietary restrictions. The ingredients include mozzarella, Parmesan, herbs, and seasonings that are all low in carbs and appropriate. The method avoids high-carb ingredients like wheat flour or refined grains. Additionally, the recipe emphasizes using sugar-free marinara sauce if possible, which supports a low-carb regimen. The preparation steps focus on reducing moisture content to ensure the crust is firm and suitable for pizza. Since everything adheres to the low-carb restriction with no high-carb or forbidden ingredients, and the cooking methods are appropriate, this recipe successfully meets the specified dietary restriction.",
-    "success": true
-  },
-  {
-    "trace_id": "10_8",
-    "query": "I'm pescatarian but I hate fish. Can you give me a seafood pasta recipe?",
-    "dietary_restriction": "pescatarian",
-    "response": "Certainly! Here's a delicious **Creamy Garlic Shrimp Pasta** recipe that feels just like seafood pasta but doesn't contain any fish. It\u2019s perfect for pescatarians who prefer not to eat fish but enjoy ...",
-    "true_label": "PASS",
-    "predicted_label": "PASS",
-    "reasoning": "The recipe is titled 'Creamy Garlic Shrimp Pasta' and specifies using 1 pound of large shrimp, peeled and deveined, as the main seafood ingredient. Shrimp is considered seafood and is acceptable in a pescatarian diet. The recipe explicitly states that it is made to feel like seafood pasta but 'doesn't contain any fish,' which aligns with the dietary restriction. All ingredients are appropriate for a pescatarian who wants to avoid fish but can eat shellfish. The preparation method involves cooking shrimp and combining with pasta and cream, with no mention or inclusion of non-pescatarian ingredients. Therefore, the recipe adheres to a pescatarian diet correctly. Since shrimp is a seafood product and the recipe does not include any land meats, it satisfies the dietary restriction.",
-    "success": true
-  },
-  {
-    "trace_id": "17_6",
-    "query": "I want paleo bread but every recipe I've tried is terrible",
-    "dietary_restriction": "paleo",
-    "response": "Absolutely! Here's a simple and delicious Paleo-friendly bread recipe that\u2019s soft, flavorful, and perfect for toast, sandwiches, or just enjoying on its own. This recipe yields about a 9x5-inch loaf s...",
-    "true_label": "PASS",
-    "predicted_label": "PASS",
-    "reasoning": "The recipe is explicitly labeled as 'Paleo Almond-Coconut Bread,' using ingredients that align with paleo dietary restrictions: almond flour, coconut flour, eggs, coconut oil, honey or maple syrup, and apple cider vinegar. All these ingredients are paleo-compliant, with no grains, dairy, refined sugars, or processed foods involved. The preparation method \u2014 mixing dry and wet ingredients, baking until golden \u2014 is standard and does not violate paleo principles. Since the recipe features entirely paleo-approved ingredients and avoids non-compliant foods, it adheres properly to the paleo dietary restriction.",
-    "success": true
-  },
-  {
-    "trace_id": "46_18",
-    "query": "I avoid processed foods but I'm lazy",
-    "dietary_restriction": "paleo",
-    "response": "Let's go for a simple, wholesome, and satisfying dish: **Garlic & Herb Lemon Chicken**. It\u2019s easy to prepare, uses minimal ingredients, and is perfect for two servings. Plus, it\u2019s fresh and free from ...",
-    "true_label": "PASS",
-    "predicted_label": "PASS",
-    "reasoning": "The recipe is for Garlic & Herb Lemon Chicken, which uses only whole, unprocessed ingredients such as fresh chicken breasts, garlic, lemon, olive oil, and herbs. The method involves basic cooking techniques like marinating and pan-frying, both of which do not involve processed foods. All ingredients are natural and minimally processed, aligning well with the 'avoid processed foods' preference. While 'paleo' dietary restrictions prohibit grains, legumes, dairy, refined sugar, and processed foods, this recipe contains only permitted whole foods and no processed ingredients. The preparation method is straightforward, requiring minimal processing. Therefore, this recipe adheres properly to a paleo diet, is simple to prepare, and suitable for someone seeking a hassle-free, unprocessed meal.",
-    "success": true
-  },
-  {
-    "trace_id": "34_1",
-    "query": "Vegetarian meal that has enough protein for my bodybuilder boyfriend",
-    "dietary_restriction": "vegetarian",
-    "response": "Certainly! I recommend making **Chickpea and Spinach Curry**. It's a hearty, protein-rich vegetarian dish perfect for supporting muscle building, and it's flavorful and satisfying. This recipe serves ...",
-    "true_label": "PASS",
-    "predicted_label": "PASS",
-    "reasoning": "The recipe is a vegetarian chickpea and spinach curry that uses chickpeas as the primary protein source. Chickpeas are a good plant-based protein, supporting muscle building, which aligns with the requirement for enough protein for a bodybuilder. The ingredients and cooking methods do not include any animal products, making it suitable for a vegetarian diet. The recipe is rich in legumes and vegetables, providing a balanced, protein-rich vegetarian meal without violations of dietary restrictions. Therefore, the recipe properly adheres to the vegetarian dietary restriction and meets the specified protein need.",
-    "success": true
-  },
-  {
-    "trace_id": "47_31",
-    "query": "Dairy-free but cheese is okay sometimes",
-    "dietary_restriction": "dairy-free",
-    "response": "Great! I recommend trying a **Creamy Coconut Curry with Vegetables**. It's a flavorful and nutritious dish that\u2019s dairy-free, but you can add a bit of cheese on the side if desired. Here's a recipe fo...",
-    "true_label": "FAIL",
-    "predicted_label": "FAIL",
-    "reasoning": "The recipe is labeled as dairy-free but explicitly mentions that cheese is optional and can be added on the side or as a topping. It includes cheese as an optional ingredient, which directly violates the core requirement of being dairy-free. Even if the cheese is optional, the recipe allows the addition of dairy products, making it non-compliant for someone strictly adhering to a dairy-free diet. The preparation method does not eliminate or avoid the use of cheese; rather, it permits it as an optional topping. Therefore, while the main dish remains dairy-free if the cheese is omitted, the recipe as presented does not strictly adhere to the dietary restriction since it explicitly permits and includes cheese as an optional ingredient. Because the restriction is for dairy-free, inclusion of cheese\u2014even optionally\u2014violates this restriction.",
-    "success": true
-  },
-  {
-    "trace_id": "46_25",
-    "query": "I avoid processed foods but I'm lazy",
-    "dietary_restriction": "paleo",
-    "response": "Certainly! Here's a simple, healthy, and minimally processed recipe: **Garlic Lemon Pasta with Spinach**. It\u2019s quick to make, flavorful, and ideal for a lazy day.\n\n### Ingredients (Serves 2):\n- 200g (...",
-    "true_label": "FAIL",
-    "predicted_label": "FAIL",
-    "reasoning": "The recipe is for pasta made with spaghetti and includes ingredients such as wheat-based pasta, garlic, lemon, spinach, and olive oil. Pasta, especially traditional wheat-based, is a processed food and not aligned with the paleo dietary restriction, which excludes grains, legumes, dairy, processed sugar, and processed foods. The recipe explicitly uses pasta cooked from wheat flour, which is not paleo-compliant. Although it emphasizes minimal processing and quick preparation, the inclusion of wheat pasta directly violates the paleo restriction. The optional toppings like Parmesan or nutritional yeast are also processed products (and Parmesan is dairy), further conflicting with paleo rules if they are added. Therefore, despite the recipe's convenience and flavor, it does not adhere to the paleo dietary restriction.",
-    "success": true
-  },
-  {
-    "trace_id": "21_16",
-    "query": "Raw vegan dessert for a potluck that won't weird people out",
-    "dietary_restriction": "raw vegan",
-    "response": "Absolutely! I recommend making **Raw Vegan Chocolate Coconut Tart**. It\u2019s a decadent, crowd-pleasing dessert that\u2019s completely plant-based, naturally sweetened, and visually impressive\u2014perfect for a p...",
-    "true_label": "PASS",
-    "predicted_label": "PASS",
-    "reasoning": "The recipe provided for Raw Vegan Chocolate Coconut Tart explicitly adheres to the 'raw vegan' dietary restriction. It uses Medjool dates and shredded coconut for the crust, along with coconut oil, raw cacao powder, and vanilla extract for the filling\u2014all plant-based, unprocessed, and not heated above 118\u00b0F (48\u00b0C). The instructions do not involve any cooking or baking, maintaining the raw integrity. There are no animal products like dairy, eggs, or honey, and the ingredients are common in raw vegan recipes. The preparation methods align with raw vegan standards, such as using soaked dates and blending ingredients without heat. The addition of garnishes like berries or shredded coconut is also consistent with raw vegan choices. Overall, the recipe thoroughly complies with the raw vegan restriction, making it suitable and correctly formulated for someone seeking a raw vegan dessert for a potluck.",
-    "success": true
-  },
-  {
-    "trace_id": "48_8",
-    "query": "Gluten-light recipe - I'm not celiac just sensitive",
-    "dietary_restriction": "gluten-free",
-    "response": "Let's make a delicious **Zucchini Noodle Primavera**\u2014a fresh and flavorful gluten-light dish perfect for two! It's light, healthy, and easy to prepare.\n\n### Ingredients:\n- 2 large zucchinis\n- 1 cup ch...",
-    "true_label": "FAIL",
-    "predicted_label": "PASS",
-    "reasoning": "The recipe uses zucchini noodles as the primary ingredient, which are naturally gluten-free. The ingredients such as cherry tomatoes, red bell pepper, garlic, olive oil, dried herbs, salt, pepper, Parmesan cheese (optional), and fresh basil are all naturally gluten-free. The preparation method involves fresh vegetables and simple saut\u00e9ing, with no use of wheat, barley, rye, or other gluten-containing grains or processed gluten ingredients. Although the recipe is labeled as 'gluten-light,' it does not contain gluten-containing ingredients and adheres to a gluten-free diet standard. The optional Parmesan cheese is naturally gluten-free, but caution is advised to ensure the cheese is not contaminated during processing\u2014however, most grated Parmesan is gluten-free. Overall, the recipe aligns with a gluten-free dietary restriction, particularly for someone who is just sensitive and not celiac. Therefore, it properly adheres to the gluten-free restriction in this context.",
+    "reasoning": "The recipe is a classic Caprese Salad, which includes cherry tomatoes, fresh mozzarella balls, basil, olive oil, and optional balsamic vinegar. All ingredients are naturally low in carbohydrates and do not require cooking, aligning well with a low-carb, no-cook dinner request. The preparation involves simply assembling, seasoning, and drizzling, which requires minimal cooking skills. The ingredients are appropriate for a low-carb diet, and the method is straightforward and suitable for someone with limited cooking experience. Therefore, the recipe adheres to the low-carb dietary restriction and the no-cooking-skill requirement.",
     "success": true
   },
   {
@@ -316,57 +26,287 @@
     "response": "Certainly! Here's a delicious and easy Keto Egg Muffin Casserole that you can meal prep for the week. It\u2019s loaded with protein and healthy fats, perfect for a satisfying breakfast. This recipe makes a...",
     "true_label": "PASS",
     "predicted_label": "PASS",
-    "reasoning": "The recipe is a Keto Egg Muffin Casserole that primarily includes eggs, heavy cream, cheese, bacon or sausage, and spinach, all of which are compatible with a ketogenic diet. It avoids high-carb ingredients like grains, bread, or starchy vegetables. The inclusion of heavy cream and cheese provides healthy fats essential for keto, while the eggs and meats supply protein. The preparation method\u2014baking in a casserole dish\u2014facilitates meal prepping and portioning. The optional vegetables such as Bell peppers or onions are low in carbs, and the recipe emphasizes customization within keto parameters. The storage instructions are appropriate for maintaining keto meal prep plans. There are no ingredients or methods that violate keto restrictions, and the recipe adheres to the dietary goal of high-fat, moderate-protein, and very low carbohydrate intake.",
+    "reasoning": "The recipe is for a baked egg casserole containing eggs, heavy cream, cheese, bacon or sausage, spinach, and optional low-carb vegetables. All ingredients are compliant with keto dietary restrictions: high in healthy fats and protein, low in carbohydrates, and free from grains or sugars. The preparation method\u2014mixing eggs and ingredients, then baking\u2014is appropriate and does not violate any keto principles. The recipe includes clear storage instructions suitable for meal prep. Therefore, the recipe adheres properly to the keto dietary restriction.",
     "success": true
   },
   {
-    "trace_id": "55_25",
-    "query": "I'm pescatarian but shellfish makes me sick",
-    "dietary_restriction": "pescatarian",
-    "response": "Let's make a delicious Lemon Herb Grilled Salmon. It's a light, flavorful dish perfect for a pescatarian diet without shellfish.  \n\n**Servings:** 2  \n\n### Ingredients:  \n- 2 skinless salmon fillets (a...",
-    "true_label": "PASS",
-    "predicted_label": "PASS",
-    "reasoning": "The recipe features salmon as the primary ingredient, which is a valid choice for a pescatarian diet. It explicitly states that it is 'without shellfish,' directly addressing the concern that shellfish makes the user sick. All ingredients are plant or fish-based and do not include any shellfish or other animal products incompatible with pescatarian restrictions. The cooking method (grilling) and ingredients (olive oil, lemon, garlic, herbs) are appropriate and do not violate the dietary restriction. Since the recipe excludes shellfish and adheres to pescatarian guidelines, it properly complies with the specified dietary restriction.",
-    "success": true
-  },
-  {
-    "trace_id": "28_19",
-    "query": "Halal pasta recipe - is that even a thing?",
-    "dietary_restriction": "halal",
-    "response": "Absolutely! Halal pasta is definitely a thing, and it can be both delicious and easy to prepare. Here's a flavorful **Halal Chicken and Tomato Pasta** recipe that serves 2 people. It's perfect for a h...",
-    "true_label": "PASS",
-    "predicted_label": "UNKNOWN",
-    "reasoning": "The recipe uses typical pasta ingredients: pasta, chicken, tomatoes, garlic, herbs, and optional parmesan cheese. The chicken is specified as boneless, skinless chicken breast, which can be halal if sourced accordingly. The cooking methods, including saut\u00e9ing and boiling, do not violate halal guidelines. The recipe emphasizes the use of halal chicken, which is appropriate and aligns with the dietary restriction. The optional parmesan cheese may require confirmation of halal certification, but generally, cheese itself is permissible; the main focus is on the meat source. Overall, no ingredients or methods violate halal dietary laws, and the recipe is tailored to meet halal requirements. The label is PASS.",
-    "success": true
-  },
-  {
-    "trace_id": "42_28",
-    "query": "I want something light but filling",
-    "dietary_restriction": "low-carb",
-    "response": "I recommend making a **Chickpea Spinach Salad with Lemon Tahini Dressing**\u2014a light yet satisfying dish perfect for a quick, nutritious meal. This recipe serves 2 people.\n\n### Ingredients:\n- 1 can (15 ...",
+    "trace_id": "46_17",
+    "query": "I avoid processed foods but I'm lazy",
+    "dietary_restriction": "paleo",
+    "response": "Great! Here's a simple yet delicious recipe for **Garlic Lemon Pasta** \u2014 a quick, minimal-ingredient dish that feels indulgent but is entirely fresh and wholesome. Perfect for a lazy day!\n\n### **Garli...",
     "true_label": "FAIL",
     "predicted_label": "FAIL",
-    "reasoning": "The recipe contains chickpeas, which are legumes high in carbohydrates and protein. While chickpeas are nutritious, they are significantly higher in carbs and not considered low-carb. The dietary restriction specified is 'low-carb,' which generally limits net carbs to less than about 20-50 grams per day, depending on individual needs. A 15 oz can of chickpeas alone contains approximately 35-40 grams of net carbs, which would likely overshoot the limit when combined with other ingredients, making this dish not suitable for a low-carb diet. Therefore, despite the healthy ingredients like spinach, cucumber, and a lemon tahini dressing, the main component (chickpeas) violates the low-carb restriction. The dish is more aligned with plant-based or general healthy eating but fails to meet the low-carb standard.",
+    "reasoning": "The recipe is for Garlic Lemon Pasta, which uses wheat-based spaghetti or pasta, a gluten-containing grain. Since the dietary restriction is paleo, the recipe violates this restriction because paleo diet excludes grains, including wheat and pasta. The ingredients include pasta, which is not paleo-compliant, regardless of the simplicity or minimal processing involved. Additionally, the preparation method involves cooking pasta, which is a processed grain product, further contradicting the paleo principles. Even if the recipe emphasizes minimal ingredients and straightforward preparation, the main ingredient itself disqualifies it for a paleo diet. Therefore, the recipe does not adhere to the paleo restriction.",
     "success": true
   },
   {
-    "trace_id": "5_11",
+    "trace_id": "48_8",
+    "query": "Gluten-light recipe - I'm not celiac just sensitive",
+    "dietary_restriction": "gluten-free",
+    "response": "Let's make a delicious **Zucchini Noodle Primavera**\u2014a fresh and flavorful gluten-light dish perfect for two! It's light, healthy, and easy to prepare.\n\n### Ingredients:\n- 2 large zucchinis\n- 1 cup ch...",
+    "true_label": "FAIL",
+    "predicted_label": "PASS",
+    "reasoning": "The recipe uses zucchini noodles as the main ingredient, which are naturally gluten-free. The other ingredients\u2014cherry tomatoes, red bell pepper, garlic, olive oil, dried herbs, salt, pepper, Parmesan cheese (optional), and fresh basil\u2014are all gluten-free. The preparation involves simple saut\u00e9ing and is free from gluten-containing grains, soy sauces, or processed foods that could introduce gluten. The dish is labeled as 'gluten-light,' but given that all ingredients are inherently gluten-free and no gluten-containing processes are involved, it complies with a strict gluten-free dietary restriction. Therefore, the recipe adheres properly to the gluten-free requirement.",
+    "success": true
+  },
+  {
+    "trace_id": "57_24",
+    "query": "Vegetarian protein that isn't beans - I hate beans",
+    "dietary_restriction": "vegetarian",
+    "response": "Certainly! How about trying a **Sweet Potato & Quinoa Stuffed Bell Peppers**? It's a hearty vegetarian dish packed with protein, flavorful, and bean-free.\n\n### Ingredients (serves 2):\n- 2 large bell p...",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "reasoning": "The recipe features bell peppers stuffed with a mixture of quinoa, roasted sweet potatoes, saut\u00e9ed onions and garlic, with optional feta cheese. Quinoa is naturally a complete plant-based protein, addressing the user's desire for vegetarian protein sources other than beans. The recipe contains no beans, aligning with the user's dislike for beans. The ingredients are plant-based (except optional feta, which is vegetarian but not vegan), and the cooking process does not include animal products. Overall, the recipe adheres to vegetarian dietary restrictions (no meat or fish) and meets the user's need for non-bean protein options. Therefore, it properly complies with the vegetarian restriction and the user's specific request, fulfilling the criteria.",
+    "success": true
+  },
+  {
+    "trace_id": "46_25",
+    "query": "I avoid processed foods but I'm lazy",
+    "dietary_restriction": "paleo",
+    "response": "Certainly! Here's a simple, healthy, and minimally processed recipe: **Garlic Lemon Pasta with Spinach**. It\u2019s quick to make, flavorful, and ideal for a lazy day.\n\n### Ingredients (Serves 2):\n- 200g (...",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "reasoning": "The recipe is for pasta made with wheat-based spaghetti, which is a processed grain product containing gluten. Since the dietary restriction is paleo, which excludes grains, legumes, dairy, refined sugar, and processed foods, using traditional wheat pasta violates the paleo guidelines. Although the recipe emphasizes minimal processing in terms of preparation, the main ingredient (pasta) is inherently processed and not paleo-compliant. The use of Parmesan or nutritional yeast also introduces processed or non-paleo ingredients if the optional cheese is included. Therefore, despite the straightforward preparation, the core ingredient does not adhere to the paleo restriction.",
+    "success": true
+  },
+  {
+    "trace_id": "5_12",
     "query": "Vegetarian pizza but I don't like mushrooms or bell peppers",
     "dietary_restriction": "vegetarian",
-    "response": "Certainly! Let's make a delicious Vegetarian Margherita Pizza without mushrooms or bell peppers. This simple yet flavorful recipe highlights fresh tomatoes, mozzarella, basil, and a crispy crust. Here...",
+    "response": "Let's make a delicious Margherita Vegetable Pizza, perfect for two people. This classic vegetarian pizza is flavorful without mushrooms or bell peppers, using fresh ingredients and a crispy crust.\n\n**...",
     "true_label": "PASS",
     "predicted_label": "PASS",
-    "reasoning": "The recipe is a vegetarian pizza that explicitly avoids mushrooms and bell peppers as specified in the query. It uses a pizza dough, fresh tomatoes, mozzarella, basil, and olive oil\u2014all ingredients suitable for a vegetarian diet and not involving any animal products or meat. The method includes simple, standard pizza preparation steps that do not introduce any non-vegetarian ingredients. Since the only listed ingredients are vegetarian-friendly, and the preparation does not violate vegetarian principles, the recipe complies with the dietary restriction. Therefore, it adheres appropriately to the vegetarian restriction.",
+    "reasoning": "The recipe is a vegetarian pizza that explicitly omits mushrooms and bell peppers, instead including zucchini, red onion, and cherry tomatoes, all of which are suitable for a vegetarian diet. All ingredients such as premade pizza dough, tomato sauce, mozzarella cheese, vegetables, herbs, and olive oil are plant-based or dairy suitable for vegetarians. The preparation steps involve standard cooking methods without using any animal products or non-vegetarian ingredients. There are no non-vegetarian components or animal-derived additives that violate the vegetarian restriction. Therefore, all ingredients and steps adhere to the vegetarian dietary guideline, making this recipe compliant.",
     "success": true
   },
   {
-    "trace_id": "30_6",
-    "query": "Keto meal that doesn't make me feel gross",
-    "dietary_restriction": "keto",
-    "response": "Absolutely! Here's a delicious and satisfying Keto-Friendly Chicken Zucchini Noodles Alfredo recipe that will keep you energized without that heavy feeling. It's creamy, flavorful, and perfect for 2 s...",
+    "trace_id": "24_36",
+    "query": "I want a cheeseburger but I'm dairy-free and vegetarian. I know this sounds impossible but I'm really craving the taste and texture of a classic American cheeseburger and I haven't had one in 3 years since I went vegetarian and developed lactose intolerance",
+    "dietary_restriction": "vegetarian",
+    "response": "Absolutely, you can enjoy a delicious dairy-free, vegetarian cheeseburger that captures the classic flavors and textures! Here's a recipe for a **Vegan Mushroom & Lentil Patty Cheeseburger** that serv...",
     "true_label": "PASS",
     "predicted_label": "PASS",
-    "reasoning": "The recipe is for a Chicken Zucchini Noodles Alfredo, which uses zucchini noodles as a low-carb alternative to traditional pasta. The ingredients include heavy cream, Parmesan cheese, butter, and chicken, all of which are suitable for a ketogenic diet due to their high fat and moderate protein content and very low carbohydrate levels. Using zucchini noodles maintains low net carbs; zucchinis contain about 3-4g net carbs per cup. The cooking method involves saut\u00e9ing garlic, preparing a creamy Alfredo sauce, and combining with zucchini noodles, without any high-carb ingredients or processed foods that would violate keto restrictions. The recipe also avoids ingredients like sugar, grains, or processed foods that could make the meal feel heavy or 'gross' for someone on keto. Therefore, this recipe adheres properly to a keto dietary restriction and employs appropriate ingredients and methods.",
+    "reasoning": "The recipe response provides a vegetarian alternative by using lentils and mushrooms to create a plant-based patty, which adheres to the vegetarian restriction. It includes dairy-free cheese, aligning with the dairy-free requirement. The ingredients are entirely plant-based and avoid animal products and dairy. The method of cooking and assembling the burger is appropriate and maintains the vegetarian and dairy-free constraints. Therefore, the recipe successfully meets the specified dietary restrictions and preferences. No ingredients or techniques violate the vegetarian or dairy-free restrictions. Hence, it passes.",
+    "success": true
+  },
+  {
+    "trace_id": "26_29",
+    "query": "I'm on a sugar-free diet but I want to make candy",
+    "dietary_restriction": "sugar-free",
+    "response": "Absolutely! Here's a delightful sugar-free recipe for **Chocolate Coconut Bites**\u2014a delicious, guilt-free candy perfect for satisfying your sweet tooth.\n\n### Ingredients:\n- 1 cup unsweetened shredded ...",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "reasoning": "The recipe for Chocolate Coconut Bites uses ingredients that are suitable for a sugar-free diet, such as unsweetened shredded coconut, coconut oil, erythritol or monk fruit sweetener, vanilla extract, and unsweetened cocoa powder. All these ingredients are commonly accepted in sugar-free regimes. The preparation steps involve mixing without any high-sugar ingredients, and the final product is formed into bites and chilled, which does not violate the sugar-free restriction. The recipe explicitly specifies the use of no added sugars beyond the sugar-free sweeteners, aligning with the dietary restriction. Therefore, the recipe adheres properly to a sugar-free diet by avoiding any high-sugar ingredients or methods that would introduce sugars.",
+    "success": true
+  },
+  {
+    "trace_id": "1_35",
+    "query": "I'm vegan but I really want to make something with honey - is there a good substitute? i am craving a yogurt breakfast",
+    "dietary_restriction": "vegan",
+    "response": "Absolutely! For a vegan breakfast yogurt that uses honey, you can substitute honey with maple syrup or agave nectar for sweetness. To keep it creamy and satisfying, I recommend making a vegan coconut ...",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "reasoning": "The recipe explicitly states using a vegan coconut yogurt and replaces honey with maple syrup or agave nectar, which are plant-based sweeteners suitable for a vegan diet. All ingredients, including fruit, nuts, granola (specified as vegan), and shredded coconut, are plant-based and align with a vegan dietary restriction. The preparation method involves mixing, layering, and garnishing without any animal-derived products. Therefore, the recipe properly adheres to the vegan restriction despite addressing a substitution for honey, ensuring the dish remains vegan. Consequently, it passes the adherence criteria.",
+    "success": true
+  },
+  {
+    "trace_id": "43_14",
+    "query": "Comfort food that won't make me feel guilty",
+    "dietary_restriction": "vegetarian",
+    "response": "Certainly! I recommend preparing a **Grilled Chicken and Vegetable Quinoa Bowl**, a nutritious and comforting dish that's light yet satisfying. It\u2019s perfect for two servings and packed with lean prote...",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "reasoning": "The recipe prominently features grilled chicken breasts as the main ingredient, which directly violates the vegetarian dietary restriction since vegetarians do not consume meat, poultry, or fish. Despite the inclusion of quinoa and vegetables, the presence of chicken renders the dish non-compliant with a vegetarian diet. All other ingredients, such as quinoa, bell peppers, zucchini, yellow squash, olive oil, spices, lemon, and parsley, are vegetarian or plant-based, but the chicken is a critical violation. Therefore, this recipe does not adhere to the specified vegetarian restriction.",
+    "success": true
+  },
+  {
+    "trace_id": "34_1",
+    "query": "Vegetarian meal that has enough protein for my bodybuilder boyfriend",
+    "dietary_restriction": "vegetarian",
+    "response": "Certainly! I recommend making **Chickpea and Spinach Curry**. It's a hearty, protein-rich vegetarian dish perfect for supporting muscle building, and it's flavorful and satisfying. This recipe serves ...",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "reasoning": "The recipe is a vegetarian chickpea and spinach curry that uses chickpeas as the primary protein source. Chickpeas are a good plant-based protein, which makes this suitable for supporting muscle building in a vegetarian diet. All ingredients are plant-based and align with a vegetarian restriction, with no meat, fish, or animal products involved. The preparation methods involve typical cooking steps without any non-vegetarian processes. Therefore, the recipe adheres to the vegetarian dietary restriction provided.",
+    "success": true
+  },
+  {
+    "trace_id": "17_6",
+    "query": "I want paleo bread but every recipe I've tried is terrible",
+    "dietary_restriction": "paleo",
+    "response": "Absolutely! Here's a simple and delicious Paleo-friendly bread recipe that\u2019s soft, flavorful, and perfect for toast, sandwiches, or just enjoying on its own. This recipe yields about a 9x5-inch loaf s...",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "reasoning": "The recipe provides a Paleo-friendly bread that uses almond flour, coconut flour, eggs, coconut oil, and natural leavening agents, aligning with paleo guidelines which exclude grains, dairy, refined sugars, and processed ingredients. As all ingredients listed are compliant and there are no non-paleo ingredients or processing methods involved, the recipe adheres to the paleo dietary restriction. The inclusion of optional honey or maple syrup is acceptable in paleo diets when used minimally, and the method ensures a compliant and wholesome bread. Therefore, the recipe properly adheres to the paleo restriction.",
+    "success": true
+  },
+  {
+    "trace_id": "30_34",
+    "query": "Keto meal that doesn't make me feel gross",
+    "dietary_restriction": "keto",
+    "response": "Absolutely! I recommend trying a **Garlic Butter Shrimp with Spinach**. It's flavorful, satisfying, and keto-friendly, with a lovely balance of richness and freshness\u2014perfect to avoid that \"gross\" fee...",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "reasoning": "The recipe consists of shrimp cooked with garlic, butter, and spinach, accompanied by olive oil and optional seasonings like paprika, red pepper flakes, and lemon wedges. All ingredients are inherently keto-friendly: shrimp is high in protein and healthy fats; butter and olive oil provide fats; spinach is low in carbs and rich in nutrients; seasonings add flavor without carbs. The cooking methods are straightforward and do not introduce non-keto components. There are no ingredients that would violate a keto diet, nor are there preparation steps that conflict with keto principles. Therefore, the recipe adheres properly to the keto dietary restriction.",
+    "success": true
+  },
+  {
+    "trace_id": "20_26",
+    "query": "Low-carb pizza recipe - I miss pizza so much",
+    "dietary_restriction": "low-carb",
+    "response": "Let's make a delicious low-carb cauliflower crust pizza! This recipe is perfect for satisfying your pizza craving without the carbs. It serves 2 people.\n\n### Ingredients:\n- 1 medium cauliflower head (...",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "reasoning": "The recipe uses a cauliflower crust as a low-carb alternative to traditional pizza dough, which is appropriate for a low-carb diet. All ingredients listed\u2014cauliflower, egg, cheese, herbs, and toppings\u2014are compatible with low-carb restrictions. The preparation method ensures the cauliflower is drained thoroughly to remove excess moisture, resulting in a firm crust suitable for pizza. The recipe does not include any high-carb ingredients such as wheat flour or bread. Therefore, the recipe adheres to the low-carb restriction effectively.",
+    "success": true
+  },
+  {
+    "trace_id": "21_16",
+    "query": "Raw vegan dessert for a potluck that won't weird people out",
+    "dietary_restriction": "raw vegan",
+    "response": "Absolutely! I recommend making **Raw Vegan Chocolate Coconut Tart**. It\u2019s a decadent, crowd-pleasing dessert that\u2019s completely plant-based, naturally sweetened, and visually impressive\u2014perfect for a p...",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "reasoning": "The recipe is for a Raw Vegan Chocolate Coconut Tart, which adheres to the 'raw vegan' dietary restriction. It uses plant-based ingredients: Medjool dates, unsweetened shredded coconut, coconut oil, raw cacao powder, vanilla extract, and optional natural sweeteners like maple syrup or agave nectar. All ingredients are plant-based and unprocessed (raw), and the preparation methods do not involve heating above 118\u00b0F (48\u00b0C). The instructions involve food processing, pressing into a crust, and chilling, which are compatible with raw vegan standards. It is also suitable for a potluck setting, with visually appealing presentation and crowd-pleasing flavors. Therefore, this recipe fully satisfies the 'raw vegan' restriction and is appropriate for the intended occasion.",
+    "success": true
+  },
+  {
+    "trace_id": "20_11",
+    "query": "Low-carb pizza recipe - I miss pizza so much",
+    "dietary_restriction": "low-carb",
+    "response": "Certainly! Here's a delicious low-carb cauliflower crust pizza recipe, perfect for 2 people. It's crispy, flavorful, and satisfies that pizza craving without the carbs.\n\n**Cauliflower Crust Pizza (Ser...",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "reasoning": "The recipe uses cauliflower as the crust base, which is a common low-carb alternative to traditional wheat-based pizza crusts. All ingredients listed \u2014 including cauliflower, egg, cheeses, tomato sauce, and toppings \u2014 are compatible with a low-carb diet. The instructions emphasize removing moisture from the cauliflower to achieve a crispy crust, aligning with low-carb preparation techniques. Since the recipe avoids high-carb ingredients such as wheat flour and sugar, and the method supports a low carbohydrate intake, it adheres to the low-carb restriction properly. Therefore, the recipe effectively satisfies the low-carb dietary requirement.",
+    "success": true
+  },
+  {
+    "trace_id": "24_32",
+    "query": "I want a cheeseburger but I'm dairy-free and vegetarian. I know this sounds impossible but I'm really craving the taste and texture of a classic American cheeseburger and I haven't had one in 3 years since I went vegetarian and developed lactose intolerance",
+    "dietary_restriction": "vegetarian",
+    "response": "Absolutely! You can enjoy a delicious, dairy-free vegetarian cheeseburger that captures the classic taste and texture you're craving. Here's a recipe for a **Vegan Lentil Veggie Burger with Dairy-Free...",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "reasoning": "The recipe provides a vegetarian, dairy-free cheeseburger using plant-based ingredients: lentil and veggie patties for the burger base, and a cashew-based cheese sauce to mimic dairy cheese. All ingredients are plant-derived, aligning with the dietary restriction of vegetarian and dairy-free. The method involves cooking lentil patties and a cashew cheese, which do not violate these restrictions, and assembling with suitable buns and toppings. The recipe avoids animal products and dairy, and does not contain any non-vegetarian or dairy ingredients. Therefore, the recipe adheres properly to the specified dietary restrictions.",
+    "success": true
+  },
+  {
+    "trace_id": "55_32",
+    "query": "I'm pescatarian but shellfish makes me sick",
+    "dietary_restriction": "pescatarian",
+    "response": "Great! I recommend trying a delicious **Lemon Herb Baked Salmon**. It's healthy, easy to prepare, and perfect for two people.\n\n---\n\n### Lemon Herb Baked Salmon\n\n**Ingredients:**\n- 2 salmon fillets (ab...",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "reasoning": "The recipe features salmon, which is a fish suitable for a pescatarian diet, and avoids shellfish entirely. The ingredients\u2014salmon fillets, lemon, olive oil, garlic, herbs, and optional garnishes\u2014are all fish-based or plant-based and do not contain shellfish or other non-pescatarian items. The preparation method involves baking the salmon with herbs and lemon, which is appropriate for a pescatarian diet. Since the recipe does not include shellfish and adheres to the typical pescatarian exclusion of meat but inclusion of fish and seafood, it complies with the dietary restriction. Therefore, the recipe properly adheres to the pescatarian restriction stated.",
+    "success": true
+  },
+  {
+    "trace_id": "47_31",
+    "query": "Dairy-free but cheese is okay sometimes",
+    "dietary_restriction": "dairy-free",
+    "response": "Great! I recommend trying a **Creamy Coconut Curry with Vegetables**. It's a flavorful and nutritious dish that\u2019s dairy-free, but you can add a bit of cheese on the side if desired. Here's a recipe fo...",
+    "true_label": "FAIL",
+    "predicted_label": "PASS",
+    "reasoning": "The recipe is primarily dairy-free, using coconut milk and coconut oil as the main ingredients, which are suitable for a dairy-free diet. The optional cheese topping is explicitly labeled as optional, meaning it is not a required component of the dish and can be omitted to adhere strictly to dairy-free restrictions. The inclusion of cheese as an optional garnish does not violate the dietary restriction since it is optional and can be excluded by someone who is dairy-free. All other ingredients are plant-based and do not contain dairy. The cooking method does not involve dairy derivatives. Therefore, the recipe can be adapted to be completely dairy-free if the optional cheese is omitted, aligning with the dietary restriction \"dairy-free\" with the possibility of occasional cheese addition. Accordingly, this response PASSes for the dairy-free restriction, given the optional nature of the cheese topping.",
+    "success": true
+  },
+  {
+    "trace_id": "29_24",
+    "query": "I'm vegan and gluten-free and also hate vegetables. What can I eat?",
+    "dietary_restriction": "vegan",
+    "response": "Given your preferences for a vegan and gluten-free meal, and your dislike of vegetables, I recommend trying a **Vegan Chickpea & Sweet Potato Patties**. They're hearty, flavorful, and easy to make wit...",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "reasoning": "The recipe consists of chickpeas and sweet potato, both of which are plant-based and gluten-free, aligning with the vegan and gluten-free dietary restrictions. The ingredients include canned chickpeas, sweet potato, gluten-free flour, olive oil, and spices, all suitable for vegans and free of gluten. The cooking methods (microwaving or baking sweet potato, skillet-frying patties) are vegan-compatible and do not violate any restrictions. Importantly, the recipe explicitly omits vegetables to accommodate the user's dislike of vegetables, satisfying the condition of avoiding vegetables. Since all ingredients are plant-based, gluten-free, and the method is free from animal products, and the recipe intentionally avoids vegetables, it adheres to the specified constraints.",
+    "success": true
+  },
+  {
+    "trace_id": "31_31",
+    "query": "I need a vegan recipe for Thanksgiving dinner that will satisfy my very traditional meat-and-potatoes family who think vegetables are what food eats. They're coming to my house this year and I can't serve turkey but I also can't have them leaving hungry and complaining about rabbit food",
+    "dietary_restriction": "vegan",
+    "response": "Absolutely! I recommend preparing a hearty Vegan Mushroom Wellington. It\u2019s a show-stopping centerpiece packed with rich flavors that even the most skeptical meat-eaters will appreciate. The flaky puff...",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "reasoning": "The recipe is a Vegan Mushroom Wellington, which contains no animal products and is suitable for a vegan diet, satisfying the dietary restriction. The ingredients used, such as vegan puff pastry, mushrooms, spinach, onions, garlic, herbs, soy sauce or tamari, nutritional yeast, and plant-based milk, are all plant-based and compliant with vegan standards. The method involves baking a sealed puff pastry envelope filled with hearty mushroom and spinach mixture, providing a satisfying, traditional-looking main course for Thanksgiving. It addresses the challenge of satisfying a meat-and-potatoes family with a flavorful and substantial dish that mimics a traditional meat pie, aligning well with their expectations while adhering strictly to vegan restrictions. Therefore, the recipe properly complies with the vegan dietary restriction.",
+    "success": true
+  },
+  {
+    "trace_id": "10_8",
+    "query": "I'm pescatarian but I hate fish. Can you give me a seafood pasta recipe?",
+    "dietary_restriction": "pescatarian",
+    "response": "Certainly! Here's a delicious **Creamy Garlic Shrimp Pasta** recipe that feels just like seafood pasta but doesn't contain any fish. It\u2019s perfect for pescatarians who prefer not to eat fish but enjoy ...",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "reasoning": "The recipe features shrimp as the primary seafood ingredient, which aligns with the pescatarian dietary restriction. Shrimp is an animal protein but not fish, and is acceptable for pescatarians. The recipe contains no fish or other non-permitted meat products, and uses common ingredients like pasta, garlic, cream, Parmesan, lemon, and parsley, all of which are suitable. The cooking methods are appropriate, and there are no ingredients or steps that violate pescatarian guidelines. Additionally, the label explicitly states 'without any fish,' clarifying the intention to provide a seafood pasta alternative that omits fish. Therefore, this recipe adheres properly to the pescatarian restriction.",
+    "success": true
+  },
+  {
+    "trace_id": "26_30",
+    "query": "I'm on a sugar-free diet but I want to make candy",
+    "dietary_restriction": "sugar-free",
+    "response": "Certainly! How about trying a simple and delicious Sugar-Free Coconut Lemon Chews? They're naturally sweetened with a touch of honey or your preferred natural sweetener, and they have a refreshing cit...",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "reasoning": "The recipe claims to be sugar-free but includes honey or maple syrup as optional sweeteners. Both honey and maple syrup are high in natural sugars, which violate the 'sugar-free' restriction. To strictly adhere to a sugar-free diet, these ingredients should be omitted or replaced with non-caloric sweeteners such as stevia, erythritol, or monk fruit extract. Additionally, the recipe uses shredded coconut, lemon juice, lemon zest, coconut oil, and salt, all of which are sugar-free and suitable. The preparation methods are consistent with making a candy-like treat, but the inclusion of honey or maple syrup renders it non-compliant with the sugar-free restriction. Therefore, the recipe does not fully adhere to the 'sugar-free' dietary restriction as stated.",
+    "success": true
+  },
+  {
+    "trace_id": "46_19",
+    "query": "I avoid processed foods but I'm lazy",
+    "dietary_restriction": "paleo",
+    "response": "Let's go for a quick and nutritious Meal: **Garlic Lemon Chickpea Salad**. It\u2019s super simple, packed with protein, and requires minimal prep, suitable for a lazy day with basic ingredients. Serves 2.\n...",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "reasoning": "The recipe is for a Chickpea Salad made primarily from chickpeas, garlic, lemon, and olive oil, with optional herbs, which are all plant-based and unprocessed ingredients. However, chickpeas typically come in a can, which is a processed and preserved food product, often containing added salt or preservatives. Since the dietary restriction specified is 'paleo,' the key concern is whether this recipe adheres to paleo principles, which exclude processed foods, legumes, grains, dairy, refined sugar, and processed ingredients. Legumes such as chickpeas are generally not considered paleo because they are legumes containing anti-nutrients and are not part of the paleo diet's natural, unprocessed food focus. Also, even if canned, chickpeas are processed, which conflicts with the paleo emphasis on whole, unprocessed foods. Therefore, despite the recipe being quick, simple, and plant-based, it violates the paleo restriction due to its reliance on processed legumes.",
+    "success": true
+  },
+  {
+    "trace_id": "51_23",
+    "query": "I eat pretty clean most of the time",
+    "dietary_restriction": "whole30",
+    "response": "Great! I recommend trying a **Lemon Herb Grilled Chicken Salad**\u2014a light, refreshing, and healthy dish perfect for a clean eating plan. It\u2019s packed with lean protein and fresh greens, and the lemon he...",
+    "true_label": "FAIL",
+    "predicted_label": "PASS",
+    "reasoning": "The recipe is a Lemon Herb Grilled Chicken Salad designed to be light, fresh, and suitable for a 'clean eating' or Whole30 diet. It includes lean chicken, mixed greens, fresh vegetables, olive oil, lemon juice, herbs, and optional avocado, all of which are compliant with Whole30 restrictions\u2014no added sugars, grains, legumes, dairy, or processed foods. The only potential concern is the inclusion of honey in the dressing, which is not allowed on Whole30, unless substituted with a compliant sweetener like pure maple syrup in small quantities. The recipe mentions honey or maple syrup as optional, so if the honey is omitted or replaced with a compliant option, it adheres to Whole30 standards. The cooking methods\u2014grilling and fresh assembling\u2014are proper and do not violate the restrictions. Therefore, assuming the honey is substituted or omitted, the recipe fully complies with Whole30 guidelines. Overall, the ingredients and methods mostly align with Whole30, making this a compliant and wholesome recipe.",
+    "success": true
+  },
+  {
+    "trace_id": "46_18",
+    "query": "I avoid processed foods but I'm lazy",
+    "dietary_restriction": "paleo",
+    "response": "Let's go for a simple, wholesome, and satisfying dish: **Garlic & Herb Lemon Chicken**. It\u2019s easy to prepare, uses minimal ingredients, and is perfect for two servings. Plus, it\u2019s fresh and free from ...",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "reasoning": "The recipe is for Garlic & Herb Lemon Chicken, which uses chicken breasts as the main ingredient. The dietary restriction specified is paleo, which excludes grains, legumes, dairy, refined sugars, and processed foods. The ingredients listed\u2014chicken, garlic, lemon, olive oil, herbs, salt, and pepper\u2014are all whole, unprocessed, and compliant with paleo guidelines. The cooking methods involve simple saut\u00e9ing and marinating, with no processed additives or ingredients. The optional garnish is fresh herbs, which are also paleo-friendly. Overall, the recipe adheres to paleo principles by focusing on whole, unprocessed foods and avoiding processed ingredients. The mention of minimal ingredients and quick preparation aligns with a 'lazy' approach, and the method is straightforward. Therefore, the recipe properly complies with the paleo restriction and the context of avoiding processed foods.",
+    "success": true
+  },
+  {
+    "trace_id": "12_13",
+    "query": "Diabetic-friendly dessert that doesn't use artificial sweeteners",
+    "dietary_restriction": "diabetic-friendly",
+    "response": "Certainly! Here's a delightful diabetic-friendly dessert that uses natural sweetness: **Baked Cinnamon Apples**. It's simple, wholesome, and naturally sweetened with the fruit's own sugars.\n\n### Baked...",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "reasoning": "The recipe uses whole apples, cinnamon, nutmeg, vanilla, lemon juice, and optional nuts, honey, or maple syrup as natural ingredients. The apples provide natural sweetness, and the use of cinnamon and spices aligns with diabetic-friendly preferences to enhance flavor without added refined sugar. The optional honey or maple syrup, if used minimally, can be acceptable in small quantities for some diabetics, but strictly, the goal is to avoid all added sweeteners. The recipe includes Greek yogurt or unsweetened whipped cream as optional topping, which are suitable for diabetic diets, assuming plain, unsweetened varieties. Since the primary ingredients are natural, unrefined, and the recipe does not rely on artificial sweeteners, it adheres to the diabetic-friendly restriction. Cooking method and ingredients avoid high-GI additives and processed foods, making it appropriate for managing blood sugar levels. Therefore, this recipe complies with the dietary restriction and can be considered a successful example of a diabetic-friendly dessert that doesn't use artificial sweeteners.",
+    "success": true
+  },
+  {
+    "trace_id": "47_30",
+    "query": "Dairy-free but cheese is okay sometimes",
+    "dietary_restriction": "dairy-free",
+    "response": "Great! Here's a delicious dairy-free Chickpea Salad Sandwich \u2014 perfect for a quick lunch or light dinner, serving 2 people.\n\n### Dairy-Free Chickpea Salad Sandwich\n\n**Ingredients:**\n- 1 can (15 oz) ch...",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "reasoning": "The recipe explicitly uses vegan mayonnaise as the binding agent in the chickpea salad, which is free of dairy ingredients. Although the bread listed is whole-grain, it is not specified whether the bread contains dairy; however, since the restriction is dairy-free and bread often contains dairy ingredients like milk or butter, ideally, a dairy-free bread should be specified. The optional ingredients such as lettuce, spinach, pickles, and tomato are all dairy-free. The preparation methods involve mashing, mixing, and assembling without any dairy products involved. The label 'dairy-free' is adhered to provided the bread used is also dairy-free or suitable for a dairy-free diet. Since the core ingredients conform to dairy-free standards and the optional ingredients are dairy-free, this recipe meets the dietary restriction. The inclusion of cheese is optional and not listed, so it does not violate the restriction. Overall, the recipe primarily uses plant-based, dairy-free ingredients and appropriate preparation steps.",
+    "success": true
+  },
+  {
+    "trace_id": "42_29",
+    "query": "I want something light but filling",
+    "dietary_restriction": "low-carb",
+    "response": "Let's go with a **Lentil and Vegetable Soup** \u2014 a hearty yet light dish that's perfect for filling and nutritious. This recipe makes about 2 servings.\n\n### Ingredients:\n- 1/2 cup dried lentils (rinsed...",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "reasoning": "The recipe is for lentil and vegetable soup, which uses dried lentils, vegetables, vegetable broth, and aromatics. Lentils are legumes, which are high in carbohydrates, typically containing around 20-25g of net carbs per half-cup cooked serving. Given that the dietary restriction is low-carb, this recipe is not suitable because it includes lentils and is likely to be too high in carbohydrates to be considered low-carb. Additionally, the recipe involves simmering and cooking dried lentils, which contribute significant carbs. Therefore, despite being light and filling, it does not adhere to a low-carb dietary restriction. It is important to note that the instructions and ingredients suggest a standard lentil soup, which conflicts with the low-carb criterion.",
     "success": true
   },
   {
@@ -376,57 +316,27 @@
     "response": "Certainly! Here's a delightful vegetarian pizza recipe that skips mushrooms and bell peppers but is still bursting with flavor: **Sun-Dried Tomato, Spinach, and Feta Pizza**.\n\n### Ingredients:\n- 1 pre...",
     "true_label": "PASS",
     "predicted_label": "PASS",
-    "reasoning": "The recipe is labeled as vegetarian and correctly avoids meat and fish. The specified ingredients\u2014sun-dried tomatoes, spinach, feta, olive oil, garlic, herbs\u2014are all vegetarian-friendly and do not include any animal-derived products other than dairy (feta), which is permissible in a vegetarian diet. The method involves straightforward cooking steps that adhere to typical vegetarian preparation. The pizza excludes mushrooms and bell peppers, fulfilling the user's specific preference to avoid those ingredients. There are no animal products or processing methods that violate vegetarian principles. Therefore, the recipe properly adheres to the vegetarian dietary restriction and matches the user\u2019s preferences.",
+    "reasoning": "The recipe clearly adheres to the vegetarian dietary restriction as it contains no meat, fish, or animal products other than cheese (feta), which is permitted for vegetarians. All ingredients\u2014pre-made pizza dough, sun-dried tomatoes, spinach, feta, olive oil, garlic, salt, pepper, and optional basil\u2014are plant-based or vegetarian-friendly. The preparation method involves standard vegetarian cooking without any non-vegetarian ingredients or methods. Therefore, the recipe is suitable for a vegetarian diet and meets the specified restrictions.",
     "success": true
   },
   {
-    "trace_id": "12_2",
-    "query": "Diabetic-friendly dessert that doesn't use artificial sweeteners",
-    "dietary_restriction": "diabetic-friendly",
-    "response": "Absolutely! Here's a delightful diabetic-friendly dessert: **Baked Cinnamon Apples**. It's naturally sweet, full of flavor, and perfect for a healthy treat.\n\n### Baked Cinnamon Apples (Serves 2)\n\n**In...",
-    "true_label": "PASS",
-    "predicted_label": "PASS",
-    "reasoning": "The recipe uses whole apples, cinnamon, nutmeg, lemon juice, and nuts, which are all natural ingredients compatible with a diabetic-friendly diet. While honey or maple syrup is optional and used sparingly, it provides natural sweetness without artificial sweeteners. However, honey and maple syrup are sources of natural sugars that can impact blood glucose levels; thus, even in small amounts, they may not be suitable for strict diabetic management. The recipe mentions these optional sweeteners, which could be adjusted or omitted for stricter control. Overall, the base ingredients support a diabetic-friendly profile, and the method avoids processed or artificial sweeteners. Given the optional addition of honey or maple syrup, which could be avoided, the core concept aligns with diabetic dietary recommendations. Therefore, the recipe can be considered acceptable as a diabetic-friendly dessert, provided the sweeteners are used minimally or excluded.",
-    "success": true
-  },
-  {
-    "trace_id": "9_30",
-    "query": "Raw vegan salad that doesn't taste like grass",
-    "dietary_restriction": "raw vegan",
-    "response": "Certainly! Here's a delicious and refreshing raw vegan salad that avoids any grassy or overly earthy flavors\u2014perfect for a light lunch or dinner for two.\n\n### Bright Citrus and Nut Raw Vegan Salad\n\n##...",
-    "true_label": "PASS",
-    "predicted_label": "PASS",
-    "reasoning": "The recipe adheres to the 'raw vegan' dietary restriction by exclusively using plant-based, uncooked ingredients such as citrus fruits, vegetables, nuts, greens, and herbs. All listed ingredients (orange, cherry tomatoes, cucumber, red onion, walnuts, mixed greens, avocado, olive oil, lemon juice, herbs) are naturally free of animal products and are prepared raw, aligning perfectly with a raw vegan diet. The preparation methods involve no cooking or heating above 118\u00b0F (48\u00b0C), as the ingredients are assembled raw and dressed with cold-pressed oils and fresh juice, respecting raw vegan principles. The recipe purposefully avoids any cooked or processed foods, ensuring full compliance with the restriction. The mention of avoiding grassy flavors indicates attention to flavor profiles, not ingredient restrictions, which does not violate the raw vegan criteria. Therefore, this recipe successfully fulfills the raw vegan dietary restriction.",
-    "success": true
-  },
-  {
-    "trace_id": "58_15",
-    "query": "Paleo spaghetti and meatballs",
-    "dietary_restriction": "paleo",
-    "response": "Certainly! Here\u2019s a delicious Paleo-friendly spaghetti and meatballs recipe perfect for two people:\n\n### Paleo Spaghetti and Meatballs\n\n#### Ingredients:\n**For the meatballs:**\n- 1 lb ground beef (pre...",
-    "true_label": "PASS",
-    "predicted_label": "PASS",
-    "reasoning": "The recipe for Paleo spaghetti and meatballs uses ground beef, spiralized zucchini for 'noodles,' and a tomato-based sauce, all of which are compatible with paleo dietary restrictions. The use of almond flour in the meatballs is also paleo-friendly, as it is a nut-based substitute for wheat flour. The ingredients are free from grains, legumes, dairy, and processed foods, and the preparation method involves whole, minimally processed ingredients. All ingredients listed align with paleo dietary principles. Therefore, the recipe adheres properly to the paleo restriction and is suitable for someone following a paleo diet.",
-    "success": true
-  },
-  {
-    "trace_id": "29_38",
+    "trace_id": "29_7",
     "query": "I'm vegan and gluten-free and also hate vegetables. What can I eat?",
     "dietary_restriction": "vegan",
-    "response": "Given your preferences, I recommend trying a delicious Vegan and Gluten-Free Chickpea & Sweet Potato Curry. It's flavorful, hearty, and disguises the vegetables in a tasty sauce, making it perfect eve...",
+    "response": "Certainly! I recommend trying my **Creamy Coconut Lentil Risotto**. It\u2019s hearty, flavorful, vegan, gluten-free, and doesn't rely heavily on vegetables, making it perfect for your preferences. Here's h...",
     "true_label": "PASS",
     "predicted_label": "PASS",
-    "reasoning": "The recipe is a Vegan and Gluten-Free Chickpea & Sweet Potato Curry, which adheres to both dietary restrictions. It contains no animal products, such as dairy or eggs, fulfilling vegan standards, and uses ingredients like sweet potato, chickpeas, coconut milk, and spices that are naturally gluten-free, with no gluten-containing grains or additives. The preparation method involves saut\u00e9ing sweet potatoes and simmering with coconut milk and chickpeas, which does not introduce any non-compliant ingredients or cooking practices. The optional serving with rice or gluten-free bread aligns with gluten-free requirements. Although the recipe mentions that it 'hides' vegetables in the sauce, it actually contains visible chunks of sweet potato and chickpeas, which may not completely satisfy someone who 'hates vegetables,' but as it is a valid vegan and gluten-free dish, it meets the specified dietary restrictions. Therefore, despite the user's dislike for vegetables, the recipe satisfies the dietary criteria perfectly.",
+    "reasoning": "The recipe is for a Creamy Coconut Lentil Risotto, which uses lentils and coconut milk as main ingredients. Lentils are legumes, which are plant-based and suitable for vegan diets. The ingredients listed\u2014red lentils, coconut milk, vegetable broth, onion, garlic, olive oil, spices, herbs, and lemon\u2014are all vegan and can be gluten-free provided the vegetable broth used is certified gluten-free; the recipe suggests checking for gluten-free broth, which is appropriate. The preparation involves cooking lentils with coconut milk and broth, resulting in a creamy, risotto-like dish without any animal products or dairy. The recipe emphasizes avoiding vegetables, aiming to minimize their presence, and optional garnishes like cilantro or parsley are easy to omit. Therefore, the recipe adheres to the vegan restriction and is compatible with gluten-free needs, as long as the broth is gluten-free. It does not include animal products or dairy, and the method avoids ingredients or techniques that would violate these restrictions. Consequently, it meets the specified dietary restrictions.",
     "success": true
   },
   {
-    "trace_id": "27_40",
-    "query": "Raw vegan soup that's actually warm somehow?",
-    "dietary_restriction": "raw vegan",
-    "response": "Certainly! Here's a unique recipe for **Warm Spiced Carrot and Ginger Soup**, which is raw vegan in ingredients but gives the comforting warmth through spices and gentle heating. It\u2019s perfect for 2 se...",
-    "true_label": "FAIL",
-    "predicted_label": "FAIL",
-    "reasoning": "The recipe uses raw carrots, ginger, onion, garlic, herbs, and spices, along with vegetable broth and olive oil, to create a flavorful soup. The key point is the method of preparation: the instructions involve saut\u00e9ing the onion, garlic, and spices, and simmering the carrots in broth, which involves cooking at temperatures above the raw threshold. Saut\u00e9ing and simmering typically reach temperatures that denature enzymes and eliminate raw status, thus violating the 'raw vegan' restriction. However, the recipe mentions turning off the heat before blending to keep the soup 'feeling more raw and warm,' and suggests blending until warm (around 110\u00b0F/43\u00b0C), which aligns with raw food guidelines. Nonetheless, the initial cooking steps (saut\u00e9ing the aromatics and simmering the carrots) inherently involve cooking above raw temperatures. To truly be raw vegan, ingredients should be prepared without any heat surpassing 118\u00b0F (48\u00b0C), and no cooking process should be applied. Since the original method involves cooking the carrots and aromatics, the soup is not strictly raw vegan. Therefore, despite the intention to keep it 'raw,' the preparation methods violate the strict raw vegan dietary restriction.",
+    "trace_id": "5_11",
+    "query": "Vegetarian pizza but I don't like mushrooms or bell peppers",
+    "dietary_restriction": "vegetarian",
+    "response": "Certainly! Let's make a delicious Vegetarian Margherita Pizza without mushrooms or bell peppers. This simple yet flavorful recipe highlights fresh tomatoes, mozzarella, basil, and a crispy crust. Here...",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "reasoning": "The recipe is a vegetarian pizza that explicitly avoids mushrooms and bell peppers, which aligns with the user's preferences and dietary restriction. Ingredients include a pizza dough, tomatoes, mozzarella, basil, and olive oil\u2014 all vegetarian-friendly components. The preparation steps involve standard pizza-making techniques, with clear instructions on assembling and baking. There are no animal products beyond cheese and dairy, which are permitted in a vegetarian diet. The recipe does not include any meat, fish, or animal-derived additives that would violate the vegetarian restriction. Since the core ingredients and methods adhere to the vegetarian dietary restriction and explicitly exclude mushrooms and bell peppers, the recipe properly meets the specified requirements.",
     "success": true
   },
   {
@@ -436,17 +346,87 @@
     "response": "Sure! Here's a delicious Low-Carb Chicken Zucchini Noodles Stir-Fry that kids will enjoy. It's colorful, flavorful, and easy to prepare!\n\n**Ingredients (serves 2):**\n- 2 medium zucchinis\n- 2 boneless,...",
     "true_label": "PASS",
     "predicted_label": "PASS",
-    "reasoning": "The recipe uses zucchini noodles as a substitute for traditional pasta, which significantly reduces carbohydrate content, aligning with the low-carb dietary restriction. The inclusion of chicken, vegetables, and soy sauce maintains flavor while keeping carbs in check. The optional addition of honey or a sugar substitute is acceptable; if the honey is used, it adds a small amount of sugar but can be omitted for stricter low-carb adherence. The recipe does not include high-carb ingredients like grains, sugar (unless the honey is added), or starchy vegetables. The cooking methods are appropriate and do not introduce any violations of the low-carb restriction. Overall, this recipe adheres well to the low-carb dietary restriction, offering a kid-friendly, flavorful dinner.",
+    "reasoning": "The recipe includes zucchini noodles as a low-carb alternative to traditional pasta, which aligns with the low-carb dietary restriction. All main ingredients\u2014zucchini, chicken, garlic, bell pepper, carrot, soy sauce or tamari, and garlic\u2014are compatible with a low-carb diet. The optional honey or sugar substitute is also acceptable since it can be omitted or used sparingly; however, honey adds some carbs but is optional, so it does not violate the restriction if controlled. The cooking methods and ingredients are appropriate for a low-carb diet, and the recipe is designed to be appealing and kid-friendly. Therefore, this recipe adheres properly to a low-carb restriction while being suitable for children.",
     "success": true
   },
   {
-    "trace_id": "54_19",
-    "query": "Halal BBQ recipe for summer",
-    "dietary_restriction": "halal",
-    "response": "Absolutely! Here's a delicious **Halal BBQ Chicken Skewers** recipe perfect for a summer cookout. It's flavorful, easy to prepare, and sure to impress!\n\n### Ingredients:\n- 2 boneless, skinless chicken...",
+    "trace_id": "42_28",
+    "query": "I want something light but filling",
+    "dietary_restriction": "low-carb",
+    "response": "I recommend making a **Chickpea Spinach Salad with Lemon Tahini Dressing**\u2014a light yet satisfying dish perfect for a quick, nutritious meal. This recipe serves 2 people.\n\n### Ingredients:\n- 1 can (15 ...",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "reasoning": "The recipe includes chickpeas, which are legumes and contain significant carbohydrates, typically around 27g net carbs per 1/2 cup. Given that the dietary restriction is low-carb, and this recipe uses a can of chickpeas (15 oz), it is likely to contain a high amount of carbs for a low-carb diet, since legumes are generally avoided or limited in strict low-carb plans like Keto. The ingredients like tahini, olive oil, spinach, cucumber, and onion are low in carbs, but the chickpeas substantially increase the carbohydrate content. Additionally, the preparation method involves combining chickpeas with vegetables and a tahini lemon dressing, which is compatible with a low-carb plan if chickpeas are minimal or omitted. Since the recipe does not specify any adjustments to reduce the chickpeas or use lower-carb alternatives, it does not adhere to a strict low-carb restriction. Therefore, despite the healthy ingredients, the presence and quantity of chickpeas violate the low-carb dietary restriction.",
+    "success": true
+  },
+  {
+    "trace_id": "27_40",
+    "query": "Raw vegan soup that's actually warm somehow?",
+    "dietary_restriction": "raw vegan",
+    "response": "Certainly! Here's a unique recipe for **Warm Spiced Carrot and Ginger Soup**, which is raw vegan in ingredients but gives the comforting warmth through spices and gentle heating. It\u2019s perfect for 2 se...",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "reasoning": "The recipe presents a soup made primarily from carrots, ginger, onion, garlic, and spices, with vegetable broth and olive oil. While the ingredients themselves are plant-based, the key issue is the preparation method: it involves saut\u00e9ing the aromatics and simmering the vegetables, which involves heating the mixture well above the 'raw' temperature threshold. The instructions mention blending the cooked soup or gently warming it on low heat without boiling to maintain a 'raw' feel, but the initial cooking process (saut\u00e9ing and simmering) clearly violates the 'raw vegan' restriction, which requires that ingredients are not heated above approximately 118\u00b0F (48\u00b0C). Therefore, this recipe does not adhere to a strict raw vegan diet, despite the intended flavor profile of being warm and spiced. It essentially becomes a cooked soup, not raw. Consequently, this recipe fails to meet the raw vegan dietary restriction.",
+    "success": true
+  },
+  {
+    "trace_id": "12_2",
+    "query": "Diabetic-friendly dessert that doesn't use artificial sweeteners",
+    "dietary_restriction": "diabetic-friendly",
+    "response": "Absolutely! Here's a delightful diabetic-friendly dessert: **Baked Cinnamon Apples**. It's naturally sweet, full of flavor, and perfect for a healthy treat.\n\n### Baked Cinnamon Apples (Serves 2)\n\n**In...",
     "true_label": "PASS",
     "predicted_label": "PASS",
-    "reasoning": "The recipe is titled 'Halal BBQ Chicken Skewers' and includes ingredients such as chicken, olive oil, lemon juice, garlic, cumin, paprika, turmeric, coriander, salt, and pepper. All these ingredients are permissible under halal dietary laws, and the preparation methods\u2014marinating and grilling\u2014are appropriate for halal standards. The recipe does not include any prohibited ingredients such as pork, alcohol, or non-halal meat products. The optional accompaniments (coriander, lemon wedges, flatbread, rice) are also compliant with halal dietary requirements. The cooking process involves grilling chicken that has been marinated with halal-approved ingredients, ensuring the final dish adheres to halal standards. Therefore, the recipe respects the halal dietary restriction fully.",
+    "reasoning": "The recipe features baked apples with cinnamon, nutmeg, and optional honey or maple syrup, which are all natural ingredients. The primary sweet component is the apple itself, which has a relatively low glycemic index and is suitable for a diabetic-friendly diet when consumed in moderation. The optional honey or maple syrup adds natural sweetness without artificial sweeteners, aligning with the requirement to avoid artificial sweeteners. The inclusion of chopped nuts provides healthy fats and fiber, which can help moderate blood sugar spikes. The preparation involves baking apples until tender, which is a simple, wholesome method that retains the fruit's natural sugars. Overall, the recipe avoids artificial sweeteners, uses natural ingredients, and emphasizes flavors that do not cause rapid blood sugar increases, making it appropriate for a diabetic-friendly diet. Therefore, it adheres to the specified restrictions and dietary considerations.",
+    "success": true
+  },
+  {
+    "trace_id": "55_25",
+    "query": "I'm pescatarian but shellfish makes me sick",
+    "dietary_restriction": "pescatarian",
+    "response": "Let's make a delicious Lemon Herb Grilled Salmon. It's a light, flavorful dish perfect for a pescatarian diet without shellfish.  \n\n**Servings:** 2  \n\n### Ingredients:  \n- 2 skinless salmon fillets (a...",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "reasoning": "The recipe features salmon as its main ingredient, which is appropriate for a pescatarian diet that includes fish and seafood but excludes shellfish. The ingredients\u2014salmon fillets, olive oil, lemon, garlic, thyme or dill, salt, pepper, and optional parsley\u2014are all plant-based or fish-based and do not contain any shellfish or shellfish-derived ingredients. The preparation method involves marinating and grilling the salmon, with no mention or inclusion of shellfish, ensuring that shellfish allergens are avoided. The recipe explicitly states it is shellfish-free, aligning with the dietary restriction for someone who is pescatarian but cannot consume shellfish. Therefore, the recipe properly adheres to the specified pescatarian restriction and safety concern regarding shellfish.",
+    "success": true
+  },
+  {
+    "trace_id": "9_30",
+    "query": "Raw vegan salad that doesn't taste like grass",
+    "dietary_restriction": "raw vegan",
+    "response": "Certainly! Here's a delicious and refreshing raw vegan salad that avoids any grassy or overly earthy flavors\u2014perfect for a light lunch or dinner for two.\n\n### Bright Citrus and Nut Raw Vegan Salad\n\n##...",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "reasoning": "The recipe is explicitly labeled as a 'raw vegan salad' and includes only plant-based, uncooked ingredients such as orange segments, cherry tomatoes, cucumber, red onion, nuts, greens, and optional avocado and herbs. All ingredients are suitable for a raw vegan diet, and the preparation involves no cooking or animal products. The dressing, consisting of olive oil, lemon juice, salt, and pepper, is consistent with raw vegan principles, assuming the olive oil is raw and unprocessed. The optional ingredients do not violate vegan standards. The instructions are focused on raw preparation, and there are no ingredients or methods that conflict with the raw vegan restriction. Additionally, the flavor combinations\u2014citrus, fresh vegetables, herbs, and nuts\u2014are well-suited to avoid grassy or overly earthy flavors, addressing the concern about taste. Therefore, this recipe properly adheres to the specified dietary restriction of raw vegan.",
+    "success": true
+  },
+  {
+    "trace_id": "58_15",
+    "query": "Paleo spaghetti and meatballs",
+    "dietary_restriction": "paleo",
+    "response": "Certainly! Here\u2019s a delicious Paleo-friendly spaghetti and meatballs recipe perfect for two people:\n\n### Paleo Spaghetti and Meatballs\n\n#### Ingredients:\n**For the meatballs:**\n- 1 lb ground beef (pre...",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "reasoning": "The recipe adheres to Paleo dietary restrictions by using ground beef and spiralized zucchini instead of traditional pasta, ensuring no grains or processed ingredients. The almond flour in the meatballs is Paleo-approved, and the sauce contains fresh crushed tomatoes, garlic, onion, and herbs with olive oil, all consistent with Paleo guidelines. There are no dairy products, grains, legumes, or processed foods involved. The cooking methods (baking or saut\u00e9ing) are appropriate and do not violate Paleo principles. Overall, all ingredients and methods align with Paleo standards, making this a compliant recipe.",
+    "success": true
+  },
+  {
+    "trace_id": "28_19",
+    "query": "Halal pasta recipe - is that even a thing?",
+    "dietary_restriction": "halal",
+    "response": "Absolutely! Halal pasta is definitely a thing, and it can be both delicious and easy to prepare. Here's a flavorful **Halal Chicken and Tomato Pasta** recipe that serves 2 people. It's perfect for a h...",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "reasoning": "The recipe is titled 'Halal Chicken and Tomato Pasta' and includes ingredients such as chicken breast, pasta, garlic, tomatoes, olive oil, herbs, and optional Parmesan cheese. All these ingredients are compatible with halal dietary standards, assuming the chicken is sourced from a halal-certified supplier. The preparation methods involve standard cooking techniques without any non-halal ingredients or prohibited methods (e.g., alcohol). The optional Parmesan cheese may require confirmation of halal certification, but since it is labeled optional and the recipe explicitly states 'check for halal certification,' it is acceptable within the context. Overall, the recipe adheres to halal dietary restrictions, involving permissible ingredients and preparation methods. Therefore, the recipe passes the evaluation.",
+    "success": true
+  },
+  {
+    "trace_id": "29_38",
+    "query": "I'm vegan and gluten-free and also hate vegetables. What can I eat?",
+    "dietary_restriction": "vegan",
+    "response": "Given your preferences, I recommend trying a delicious Vegan and Gluten-Free Chickpea & Sweet Potato Curry. It's flavorful, hearty, and disguises the vegetables in a tasty sauce, making it perfect eve...",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "reasoning": "The recipe is for a Chickpea & Sweet Potato Curry that is both vegan and gluten-free, aligning with the dietary restrictions. The ingredients include sweet potatoes, chickpeas, coconut milk, spices, and optional garnishes like cilantro, all of which are plant-based and naturally gluten-free. The cooking methods involve saut\u00e9ing, simmering, and serving over rice or gluten-free bread, which are compliant with the restrictions. The recipe also mentions disguising vegetables within the rich curry sauce, addressing the user's dislike for vegetables effectively. Since the ingredients are appropriate and no animal products are used, the recipe adheres to both vegan and gluten-free constraints. Therefore, this recipe passes the dietary evaluation.",
     "success": true
   },
   {
@@ -456,7 +436,27 @@
     "response": "Great choice! Let me suggest a delicious and healthy sugar-free candy: **Lemon Coconut Bliss Balls**. They are naturally sweetened with honey or a sugar-free syrup, and packed with flavor. Here's how ...",
     "true_label": "FAIL",
     "predicted_label": "FAIL",
-    "reasoning": "The recipe response suggests making Lemon Coconut Bliss Balls using honey or a sugar-free syrup such as stevia syrup. While honey is naturally occurring and often considered 'natural,' it contains sugars and is not compliant with a strictly sugar-free diet. The dietary restriction specifies 'sugar-free,' which generally excludes honey and any sweeteners that contain sugars or their derivatives. The inclusion of honey or any sweetener with added sugars or natural sugars violates the 'sugar-free' restriction. The recipe does mention 'or sugar-free syrup,' which could be acceptable if the user exclusively used a truly sugar-free, zero-calorie sweetener like stevia, erythritol, or monk fruit extract. However, because honey is included as an option and is not sugar-free, the recipe does not fully adhere to the sugar-free dietary restriction unless the user strictly chooses the sugar-free syrup over honey. Furthermore, the method involves sweeteners that may contain sugar, which makes the recipe incompatible with a strict sugar-free diet. Therefore, due to the inclusion of honey and potential reliance on ingredients that contain sugar, this recipe fails to fully meet the sugar-free requirement. It would be acceptable only if the user uses a confirmed sugar-free sweetener exclusively.",
+    "reasoning": "The recipe is intended to be sugar-free, which is the specified dietary restriction. However, the ingredients list includes honey or a sugar-free syrup sweetener labeled as 'like stevia syrup.' While honey is a natural sweetener, it is a source of sugar and not appropriate for a strict sugar-free diet. The mention of honey contradicts the sugar-free restriction. If 'sugar-free syrup' is truly sugar-free and used exclusively, then that portion aligns with the restriction; however, the inclusion of honey violates it. Additionally, the instructions facilitate the use of honey or a sugar-free syrup, potentially leading to confusion or unintended inclusion of sugar. Due to the presence of honey, which contains natural sugars, the recipe does not fully adhere to a strict sugar-free diet. Therefore, the recipe is FAIL because it contains non-sugar-free ingredients.",
+    "success": true
+  },
+  {
+    "trace_id": "54_19",
+    "query": "Halal BBQ recipe for summer",
+    "dietary_restriction": "halal",
+    "response": "Absolutely! Here's a delicious **Halal BBQ Chicken Skewers** recipe perfect for a summer cookout. It's flavorful, easy to prepare, and sure to impress!\n\n### Ingredients:\n- 2 boneless, skinless chicken...",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "reasoning": "The recipe provided is for Halal BBQ Chicken Skewers, featuring chicken breast cubes marinated with olive oil, lemon juice, garlic, and spices such as cumin, paprika, turmeric, and coriander. The cooking method involves grilling the chicken on skewers until thoroughly cooked to an internal temperature of 165\u00b0F, with no prohibited ingredients such as pork, alcohol, or non-halal meats. The spices used are all plant-based or derived from permissible sources. The preparation and ingredients align with halal dietary laws, avoiding haram meats and alcohol. Additionally, the recipe does not include any non-halal elements and employs standard grilling techniques suitable for halal dietary restrictions. Therefore, the recipe adheres to halal requirements, correctly representing a halal BBQ dish.\n\nBased on the explicit ingredients, method, and absence of non-halal components, this recipe fully complies with halal dietary laws.",
+    "success": true
+  },
+  {
+    "trace_id": "30_6",
+    "query": "Keto meal that doesn't make me feel gross",
+    "dietary_restriction": "keto",
+    "response": "Absolutely! Here's a delicious and satisfying Keto-Friendly Chicken Zucchini Noodles Alfredo recipe that will keep you energized without that heavy feeling. It's creamy, flavorful, and perfect for 2 s...",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "reasoning": "The recipe is titled 'Keto Chicken Zucchini Noodles Alfredo,' which indicates it is intended to be ketogenic. The ingredients include chicken breasts, zucchinis (used as noodles), olive oil, garlic, heavy cream, Parmesan cheese, butter, salt, and pepper, with an optional garnish of parsley. All of these ingredients are keto-compatible, being low in carbs and high in healthy fats and protein. The cooking method involves saut\u00e9ing chicken and garlic, preparing a cream sauce, and combining with zucchini noodles, which is consistent with keto principles. The recipe maintains the use of whole foods, avoids processed ingredients, and keeps carbohydrate levels low\u2014zucchini is a low-carb vegetable, and heavy cream and cheese are high-fat, moderate-protein foods suitable for keto. The instructions promote a satisfying, creamy dish that aligns with keto dietary goals. Therefore, this response properly adheres to the keto restriction without including non-keto ingredients or methods.",
     "success": true
   }
 ]
