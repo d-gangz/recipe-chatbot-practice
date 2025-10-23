@@ -29,9 +29,17 @@ from tqdm import tqdm
 from dotenv import load_dotenv
 
 # Add the project root to the Python path to import backend.utils
-current_dir = Path(__file__).parent
-project_root = current_dir.resolve().parent.parent
-sys.path.insert(0, str(project_root))
+# This is needed because the script is in homeworks/hw2-2/ (two levels deep)
+# and we need to import from the backend package at the project root
+current_dir = Path(
+    __file__
+).parent  # Get the directory containing this script (homeworks/hw2-2/)
+project_root = (
+    current_dir.resolve().parent.parent
+)  # Navigate up two levels to project root
+sys.path.insert(
+    0, str(project_root)
+)  # Add project root to Python's module search path at highest priority
 
 # pylint: disable=import-error,wrong-import-position
 from backend.utils import get_agent_response
